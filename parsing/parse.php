@@ -12,7 +12,7 @@ if ($method!= 'POST') {
     die();
 }
 $data = json_decode(file_get_contents('php://input'), true);
-var_dump($data);
+// var_dump($data);
 $service_url = $data['url'];
 $id = $data['id'];
 
@@ -60,6 +60,19 @@ if ($fp = fopen($id.".tsv", 'w+')) {
     fwrite($fp, $create);
     fclose($fp);
 }
+$prefix = "https://49afc650.ngrok.io/parsing/".$id.".tsv";
+
+curl_setopt($ch, CURLOPT_URL,"http://35.199.154.16:8000/api/search_key");
+curl_setopt($ch, CURLOPT_POST, 1);
+curl_setopt($ch, CURLOPT_POSTFIELDS, "link=".$prefix."&keyword=".$keyword);
+
+
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+$server_output = curl_exec ($ch);
+
+curl_close ($ch);
+
 
 echo json_encode(["status" => 200]);
 

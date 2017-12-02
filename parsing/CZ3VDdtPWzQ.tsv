@@ -1,0 +1,512 @@
+1000	My name is patrick and i am a program manager on microsoft
+9000	About progressive apps. Who has
+20000	Define what it is, who has built one? all right, cool.
+26000	About, it will be progressive web apps which is a marketing
+33000	App feeling experiences in the web.
+43000	We will go through high-level features and things that make
+51000	Apple -- with actual implementation.
+64000	I do work at microsoft. This is just from -- it's a
+77000	The more popular ones and as katrina. She is normally with me when i
+84000	Disney world and he is our
+89000	Parent for the first time, they always tell you that, get sleep
+97000	He is the easiest baby in the world.
+101000	He had 103 fever but he was still chill as hell.
+110000	We are from seattle. The one thing that
+119000	In his car seat. He hates being strapped and so
+127000	A few months of having him in seattle in our apartment, he
+135000	Do not know where seattle is, just to be clear, it's right
+145000	Above that, it's about a 2 1/2 hour
+150000	In the car for so long so i did what most nerds would do, i
+158000	Understand how baby's brains work but this comps him
+164000	And stopped with literally a second every time.
+172000	It works. I finally conquered him.
+182000	This on my phone and he is calm . We get to vancouver and everything is great.
+190000	Be clear, we were just hanging on the side of the road.
+198000	Hours and we had a three-hour drive back to seattle or so.
+208000	Crying like he always does and i pull out my phone to show tim
+216000	Him and i get this. I have t-mobile to get the data
+245000	Ct->> [ audio breaking up ]
+509000	Light inside of the browser and ultimately influence and created
+518000	Pertinent to what we are talking about today,
+525000	Whole bunch of files that could be pre-downloaded and precast
+532000	Subsets of problems and ultimately, it led to the
+539000	Thing that i remember the most about app cash is this talk,
+551000	This is a google chrome now and at the time, he was working for
+557000	Implement an off sign -- off- line website and he had a lot
+566000	Down the wrong road for a long time. The problems with app cash and
+574000	Estate of the past so that we can properly avoid them in the
+581000	File and you can make a list of the contents of that  app cash
+585000	Have to define mantras just by saying
+589000	That, you had to have a comment because the file had to be
+602000	Index file but you do not see the,, the app cash would never
+607000	There forever. If you did not have the
+614000	App cash is terrible and there are a lot of problems with it.
+624000	Imagine if the query is
+630000	Unique files are there but app cash if they do not have it locally.
+638000	And if you have anything that is generated on the client side
+647000	Nearly impossible to maintain all those things.
+654000	So because there is no way to know whether you
+663000	Takes over  the entire domain and it just assumes everything
+671000	Longer able to access it, even if you had the fastest internet
+687000	Not only that, if you have a 200 hd responses on the, it is
+692000	Exist and it sucks. Probably the worst thing is
+698000	Nothing will ever get updated even if you comment stuff
+706000	Terrible, it is a horrible api and it sucks.
+714000	That we did not do any of this, in order to find out why
+720000	Examples and implement them. The very first step of using a
+729000	Looking like this zooid i been
+736000	Year now and the firefox has them as well.
+745000	Updated behind the flag and then by default in the
+751000	They had a development for it on desktop and mobile but for
+757000	All browsers so you want to do a feature detection.
+767000	And if it does, it will return so, now that we know that it
+778000	Navigator.Service. Worker.
+789000	Work file and in that specific
+796000	The reason is for security. If you load it like this, you
+806000	Worker.Js. This will be able to control
+810000	Files, whether it's a forum or email system -- service
+820000	Take over the entire domain, that would be terrible.
+827000	Domain but with service worker, we wanted to have it scoped .
+834000	And you can have it from anywhere that you are from.
+838000	From. Census was loaded from the website, it can control the
+847000	Js, we can control any you're out that gets uploaded from/js.
+857000	Registration process, you also enable this secondary argument
+865000	That scope is just a -- an
+873000	Worker and it will have a special header that will tell
+881000	Is not with the header, it will fill out if
+888000	Path and change scoped on their and they can change the
+894000	We want to make sure everyone can be happy.
+901000	-- You know how to handle earlier.
+905000	Imagine, it is loading a file from the network and all new
+913000	The idea is that any api has additional thing that hangs off
+926000	You have this api and once you have completed, you pass the
+933000	The result. In this case, we do not particularly care if anything
+939000	That the site is available inside of a call back but it is
+943000	Are available and aware of it. You do get the optional
+953000	It but otherwise, is not particularly useful. Ultimately, the thing that is
+959000	Promises have the catch api and that is the exact same thing.
+965000	Promises by default so you do
+969000	Catchable so if there is a problem, they were not throwing
+977000	Stop all execution like most javascript would. You would have to catch and be
+986000	To do so you could do some my console log out for development
+994000	Sam and that is a new pi that send results to url and the
+1005000	There is an error in the user and it closes the page or
+1014000	It's really useful . Jumping into actual service workers,
+1021000	Too deep, i want to talk about the name because it is weird
+1028000	Like, wiser call the service worker? the reason is because of web
+1033000	Have been around in the web for a long time.
+1038000	Idea of a web worker came from worker pools and the idea is
+1046000	Effectively, if you've ever had to implement a website and it gets grows quickly, that is
+1055000	We do not know for fact that the piece of code that you are
+1059000	Change delay of the page so we cannot do it on single operations.
+1067000	Able to do a lot of external processing and we want to be able to allow for.
+1074000	The api that is window worker and from within their, you are
+1087000	The external thread inside the browser. From there, you have the post
+1094000	Created and that allows you to send an object and a data from
+1100000	External thread, from there, it does something with the data,
+1106000	Back to result. You do not have direct access
+1113000	Anything that you can do in the native javascript. You can do a lot of complex
+1120000	The page. The key things that are
+1129000	Worker reacts to the content you sent to them.
+1134000	Web worker and service workers on the other hand react to
+1140000	The browser and is able to respond to network request and
+1149000	Get off of those experiences. If it's a cash network expense,
+1156000	What does the web server look like? it is a javascript file in the
+1166000	This. We have this and
+1172000	Sure we are on the same page, itself, if you look at the
+1181000	Normal javascript file, you
+1186000	Problem is that the window is not a javascript concept.
+1193000	And service worker, they do not have access to the dog, you
+1200000	So, we created a new thing called self and that is the
+1209000	Ever seen -- xe self, it's just
+1217000	Window.Self just refers to windows and you can actually
+1223000	Way you do not have to do the weird switch and it is great.
+1232000	The other thing i would like to point out is the function
+1240000	Syntax and that it's fun and cool.
+1245000	Cleaner way but the problem usually is that there is not a lot of implementation status
+1256000	Support ie and mobile safari and things like that.
+1263000	This is the current support for es six.
+1268000	When you're in an environment, you can write yes six is no
+1274000	Implement es six. You can write the code without
+1282000	Will stop explaining random other things. We have the install step.
+1293000	Food service worker for the first time.
+1299000	Worker and it registers, the set fires that the next time it
+1305000	Beginning step. It would fire again if the service worker
+1310000	That ends up being useful for the cash items.
+1317000	Of stuff and keep it on your network. But it ends up looking like his,
+1329000	To keep entire network request objects. Not just the body request but
+1339000	The network, anything that is inside of it will be available
+1346000	Is really powerful. They are actually very similar
+1353000	Storage api and we have a lot of those in the browser and in
+1361000	Stuff like local storage and a whole lot of others. There is a bunch of ways to
+1368000	Another solution but it was
+1373000	Entire network object and store all htp headers and the content
+1382000	We use it and it ends up looking like this.
+1388000	Exists within the workers and you can create multiple caches
+1401000	Shipping a code that gets updated once every week or two
+1407000	That traffic is updated every few weeks.
+1412000	Another cash and wipe up the hot cash much more frequently so that you don't have to keep
+1417000	Define the cash that you want to download that all users will
+1427000	Domain and the files and so,
+1434000	Able to dig in to the actual event. Like i said, this event happens
+1441000	The initial install event. Service workers are not like
+1448000	When they open up the web worker, it is possibly running
+1454000	Some service workers are very long-lived and they just
+1460000	Completely close. The lifetimes are generally not going to be as long.
+1469000	Might take a long time, like pre-caching a lot of assets, we
+1474000	To the web browser and it says i am not doing a true loop, i'm
+1478000	The browser will allow you a longer amount of time
+1482000	We say, i'm trying to do stuff here and then inside of that,
+1489000	We are staying in this case, we will create a new one and if it
+1498000	And it's a database effectively and we have another promised
+1516000	There, we have a call back inside of the ident of viable
+1523000	Dig bugging -- debugging
+1527000	Download. The cash is a really nice
+1531000	Specifically or entire request objects, meaning after they
+1537000	Will store all of them and return
+1543000	Return successfully in all urls will get cast and it will
+1564000	Basis of this. So, this is not the only
+1570000	It's just an array based interface to add a url
+1579000	You can also mention there is a cashel ad which is the exact
+1584000	Allows you to pass a url or request object
+1590000	You can return if you are off- line. Without having to go to the
+1598000	Which is just like at all but it matches.
+1606000	Idea is that , a service worker,
+1611000	Realistically, most do not actually control all the
+1619000	Networks and things like that and as a result, it needs to
+1628000	Do not want -- websites to be able to access data from
+1633000	Vulnerability and since we don't want that to be
+1640000	Other urls, we certainly don't want people to readily access
+1646000	But cached output allows you to do is store opaque responses.
+1654000	Or any other place that is not the url that you control
+1661000	You are given the idea that you are being presented a black box
+1669000	The browser can take care of everything but your java intro
+1676000	For the pay response, supports it
+1686000	I honestly do not why it's two apis but then there is
+1692000	Urls effectively that exists inside the cash information and
+1700000	Allows you to delete the cash. I made a lot of references to
+1709000	What i'm talking about, we need to go into an api called fetch.
+1720000	Things, unfortunately. The idea of a fetch events that
+1730000	This is fired every time you go to the network, almost.
+1737000	Event and we will be able to
+1744000	This is included inside of the pay.
+1752000	An event in your service worker can respond to this.
+1764000	One of which would be the service worker itself.
+1772000	Service worker so they cannot intercept the own request.
+1779000	We can go into what the easy mode or initial cash only
+1787000	Services can implement today. This is the speed and user experience.
+1797000	Install level that we outlined before and the idea here
+1803000	Event and that is on any network request and we get the
+1814000	At this point in time, we have intercepted a proxy from the
+1822000	And check to see whether or not we have the information cached.
+1829000	That request represents the response that i mentioned before
+1841000	Are stored inside of our cash and if we have, we get a successful response with the
+1848000	Return immediately and that
+1853000	Will give it back immediately. You can think of things that is
+1861000	Server and it will be off-line immediately. If you do not have it, what
+1870000	Both an event and api and it is unfortunately named but it is
+1878000	Effectively a request with the promise based interface.
+1885000	Object and will will have.Ven.Katz with the response
+1895000	Because it replaces this inside a request and this is the x
+1905000	Back in the ie 4 days for outlook online  and the api
+1911000	To interact and generally speaking, it's what you want to
+1915000	You no longer have the computer response or request.
+1924000	Moving back into the actual request, but it looks like is,
+1935000	And that will represent the entire object but this is intelligent enough to
+1947000	You do not have to grab the specific string out of it yourself.
+1956000	What is happening is that we did not have the request cached
+1963000	Requested the original url but they requested on the page and
+1969000	This case, it is a nacve example because we are not
+1978000	I am assuming on this particular page that everything
+1985000	Do cached output because it might be in opaque response or
+1993000	Request by the response. We are adding to our database of the
+1999000	Request object which can be looked up by url or the entire
+2005000	Value that we are storing inside the store is a clone
+2013000	This is an interface and a new concept for most developers but
+2024000	Shouldn't. If we try to store all that, we
+2032000	It's down. So what happens,
+2038000	To prevent the blocking behavior. You do response.Clone in order
+2049000	To the users. This is the response he return
+2058000	Their perspective, they basically have what is cash and it gets there much faster.
+2070000	Nothing is really perceivable. This can be off-line and
+2081000	And for example, this is not account for any file updates. It just kept adding stuff to
+2085000	Realistically, that is probably not what is happening in the
+2091000	Update. Now, this is extremely similar
+2102000	Difference is that before, we did an event response
+2108000	Was not there, we went out to fetch and in this case, we will
+2114000	Respond with a blank value and what we end up doing is going
+2121000	To fire off another network request that we can
+2129000	With the cash value, even if it's empty and if not, what we
+2137000	We have the lifetime of the service worker and
+2142000	Whether it's cash or not, we always request in the background and the reason is
+2151000	What ends up happening is that we do the exact same code as we
+2157000	Another and in this case, we
+2166000	Function we can create like this. The idea of refresh is that you
+2174000	To the browser tab that is open and they can figure out whether the file has changed.
+2184000	Global . And what client is,
+2189000	A service worker and the idea is that previously, when you
+2199000	Opens is its own
+2203000	With the service worker, every single page that is registered
+2211000	Can split it into 15 different threads but the idea is that
+2221000	Has the service worker. What self.Client.Match all get
+2229000	What we are able to do is call self.Client.Match and get it
+2237000	Represents every single one of those clients.
+2243000	Object and this is a simple object and we will call a tape
+2249000	Keyvalue that i am adding so that i can understand the logic
+2258000	This is just the url from the request that we fetched from
+2265000	Grab the e time. I mentioned a couple times that
+2271000	Example of how you can interact from them.
+2277000	E tag, if you are unfamiliar, this represents a version of a
+2286000	Lot of people's headers by default but this is a way to uniquely identify the version
+2296000	Created, we can call to get a string bass version of the
+2302000	Time. From within the main javascript
+2309000	Message handler. This will get fired anytime the
+2315000	Define the function where we will grab the data in the event
+2326000	Created before and we need to parse it to make the object
+2333000	Where we store each individual files
+2340000	Message -- on the messes, this is equal to this value and if
+2344000	It will alert the client saying you can refresh the page and do all of that.
+2355000	All this and there's a lot of flexibility and possibilities.
+2362000	Questions, we condense about in a little bit. There are other apis that i
+2370000	Workers, like push notifications.
+2377000	Can register and it is pretty straightforward. It is another vent like a
+2385000	That is basically it. You need a server to be able to
+2392000	How to respond to it. You can grab the data and that
+2400000	Pushed from the notification services.
+2411000	Be a string or jason, i like jason. Again, we can call the event
+2421000	So we have received the notification that we want to
+2427000	You remember, that was the event that represents an
+2433000	Service worker, we call the notification off of that object
+2438000	Required thing that initial string value for the title
+2444000	Bunch of stuff that you can pass in after that and this
+2457000	You can have a lot more object inside of it like icon and
+2466000	Can do a bunch of neat stuff. They are still not widely
+2473000	Within the next year or year and half, you will be able to
+2480000	Back to my toy example website, i have created this to power
+2490000	I work like a half hour to get it off-line and two days to get
+2496000	And i showed her my phone and how it was working and she was
+2500000	Got that. The reason was because
+2508000	They are coming but they are not there now and so
+2515000	Year and half or two years is not my baby today.
+2520000	Deflated my bowling but i still
+2524000	I need something to help my baby stop crying today, not two
+2530000	Make this work. I had a terrible idea and that
+2538000	And it is a terrible api and i hope i made that clear.
+2547000	. They do not even want to remember that it was ipa.
+2551000	I can count on two hands the amount that have been removed.
+2560000	Terrible api, it made sense and the one thing that bothers me
+2567000	Understand the sharp cases, you can know how to handle it.
+2582000	Implemented and been around for 10 years. What we can end up doing is
+2591000	If you want to store a collection of files.
+2600000	Ccs file and mp3 file. It is not of dynamic stuff.
+2610000	Which to see if this is enabled on the client and if it is, you
+2616000	Exposed as window application cash. If you have never used and app
+2624000	It's a html attribute at the top and you have to set
+2634000	It has to be there at load time.
+2641000	Back to that. We do not want to to be there by default because
+2648000	App cash would take over everything. What we did and was a hack.
+2658000	Appended with the page and because it's terrible,
+2666000	Though it is inside of a capital i-frame. We load this inside of it and
+2674000	Line. Again, of cash is a terrible
+2687000	And bring 290 milliseconds. It's a huge impact that it can have.
+2691000	Can test it on slow connections and bad devices because
+2698000	There. After that, i felt dirty and i
+2711000	The idea of an off-line application is not something that is new
+2720000	If you actually load this inside of a version of internet
+2730000	Or ie 8, was the last version for the cash.
+2734000	Be using internet explorer and you click on it and you actually get installed versions
+2743000	One should be doing this. I want to illustrate that pwa
+2749000	This can be a radical way to update websites.
+2757000	And i could've shipped the same domain 20 years ago.
+2764000	Start to work when the browsers come. I have something that works in
+2770000	Found in a machine and it worked.
+2776000	You do not have to wait for to be supported.
+2783000	Websites. Before i mentioned, these are a
+2792000	Today and it has actually been again around for a while. It
+2799000	2008 Edge did not exist and this looked like this and
+2810000	Again, why web workers are
+2815000	Before, you cannot relay the page inside of the school
+2819000	All that stuff and we cannot trust you to not, police grew
+2827000	As a result, everything starts writing for
+2836000	Up being heavy, it makes it hard to do on the browser and
+2841000	Those tasks to external threads and make it work.
+2848000	What is great about web workers is that they are supported
+2855000	Of things and have it work off- line.
+2860000	Am the maintainer for modernizer and this is in terms of use.
+2869000	Modernizers has the detection library and it checks whether
+2878000	The problem is in version 2, it was one gigantic file.
+2887000	Know whether or not it is supported inside of a browser,
+2895000	Smallest bundle as possible so you make it dynamic.
+2904000	Checkbox in each one you check off, you build a completely
+2913000	One of the things that we did was implement a file counter in
+2919000	Show you how large the file is, every single time you check
+2926000	Want to go to the server every time to do that so we use a web worker.
+2936000	We have to see if that exists so that
+2942000	After we do that, we will call a new worker object were we
+2954000	Implantation of compression
+2959000	Listeners. So, we will create a post
+2969000	That represents everything that has been checked off in the
+2980000	To respond to the resulting size of the web workers
+2985000	This is what it looks like and the first line is the import
+2992000	In both web workers and service workers the idea is that is a
+3001000	Ability for the libraries and other network request, you need
+3008000	Import script and pass a whole bunch of urls and files that
+3014000	The ability to run the cold -- code. It's completely synchronous so
+3028000	Javascript implementation and pretty bites which is a simple
+3034000	Like 1204 and mixed into one kb. That way we get the nice string
+3042000	Handler and this will be called anytime the configuration
+3048000	Over and we say okay, we grabbed the build itself and then i
+3057000	Original site and the compress i. The original side will be
+3062000	Compress, window calling packer.Deflate
+3070000	With the default compression value and we get that and we
+3074000	It works without blocking the ui thread and i encourage you
+3082000	It's doing the compression in the background, but you would never know it.
+3090000	Because it is in a web worker. It's great.
+3096000	I have is this thing called web worker preprocessor and it is
+3104000	But the idea is that we have a lot of new libraries like
+3112000	Of these different libraries that have really made development a lot more fun.
+3121000	As a result, you are not able
+3130000	Websites, they do not work off- line because they rely on the
+3140000	Without coping work constantly in the background. What i ended up doing was
+3147000	Automatically and as a proof of concept, i made this website
+3153000	The left-hand side, you have a complete file and on the right-
+3157000	The network and that is completely off-line.
+3168000	Running a version of sass but it works. It works basically
+3173000	It would be terrible to have everything stop scrolling and
+3181000	You can push the web forward by using this and you can have
+3187000	Practical, stick with me, it's poker next stop work.
+3194000	To do performance heavy interactions.
+3204000	Virtual don. This is one of the key things
+3212000	The idea is rather than doing a whole bunch of state changes,,
+3219000	States inside of your application and when you change anything, you
+3227000	Then we will figure out all the different things that have
+3235000	Object using an html to beat that. It's what makes react a lot
+3242000	It works great but what nolan did was implement that inside
+3249000	He does it in an external thread and what is cool about that is
+3257000	Galaxy which is a 6 1/2-year-
+3263000	Second on his animations on something that is loading a
+3269000	My iphone on those websites and he is doing on a phone that i
+3276000	And it is a cool implantation and i
+3280000	Nolan is a genius and very friendly so feel free to reach
+3287000	His x tv. He is a huge advocate for and i
+3292000	It is a way to build the database and it is a database
+3302000	It was added to firefox years ago and it is in all browsers
+3309000	Is that most engineers are used to data
+3314000	You have a keyvalue pair that you end up storing and grabbing
+3321000	Thing and you have to do this
+3328000	Convince anyone but this is not as good as that because it is
+3334000	That is because, local storage is much more simplistic and
+3343000	It is meant to be a primitive and other things are built on top of it.
+3348000	A great example would be decks cjs and it is a version or
+3361000	Is the interaction and interface where you are able to
+3367000	Is really nice if you want to do high data storage and i
+3374000	Get off of local storage, local forage is a good option.
+3382000	You get callbacks rather than direct replies because of how
+3394000	His pouch tp. That is an actual implantation
+3398000	Pouch tp database thanks. It's a proof of concept website where people download the
+3406000	Is huge and there are millions of packages at this point
+3414000	You can have the stores completely off-line. That is because you can do a
+3421000	I encourage you to check out this website. It is called the browser
+3429000	Are able to use it to store gigabytes of data inside your browser.
+3441000	Storage space and increment is 150 megabytes
+3449000	Up to 15 of available disk space on any given volume and
+3459000	That you can be storing inside of your service but you can
+3466000	Here and i don't know how to pronounceable you can go to and
+3473000	How much you can store any browser today. Coming back to pwa for a little
+3482000	Concepts that of a pwa is the
+3488000	While. If you've ever implanted any
+3496000	For mobile, you will probably be familiar
+3501000	That has a lot of data inside of your application.
+3508000	Description and icons that are using, you can lock the
+3518000	Things inside of a progressive web app manifests is that you
+3524000	Pwa in need of applications, you can tie them.
+3528000	Automatically go into the application without you having
+3532000	Have preferred application false as a web developer and i
+3536000	True if you prefer to get them into the experiences. The great thing about a
+3550000	There is no way to crash your website by doing.
+3559000	Loaded in any a female part since the browser
+3567000	It will not do any harm either. You can toss in the header and
+3572000	Noticed with all of the metadata that is in there is
+3577000	You have artie had. -- Already have.
+3581000	Done windows 8 applications, all of these other things, the
+3587000	A single file that can reduce your head size but it also
+3594000	Easier to get a manifest. Built a model called
+3600000	Website in order to build the manifest for you automatically.
+3619000	The most feature complete version of the web manifests as
+3628000	Language's attention and is one of the simplest once.
+3634000	It also has cld and that is the binary version or binary file
+3644000	Text and figures out the most
+3651000	The html and checking to see if you have a language attribute
+3656000	If you do not have that, we will fall back to fml
+3664000	Any librarians? it is an obscure language but
+3672000	Possible so we will look up any tag, possibly the final language
+3679000	Where we patch the entire stream of the file
+3685000	Out of it and we get the language no matter what by hook
+3691000	This is one of the more complex ones. You can tell the number of
+3700000	And this is too big for a single slide, let alone the
+3708000	Icons and the manifest files for windows 8 and the tiles and
+3717000	Like i said before, you can actually do this and use this
+3724000	And if you go to web manifests, you will get this website and
+3736000	Want and hit enter and you get a pop-up and get the manifest
+3743000	It works. You are on your steps to
+3749000	Successful and useful. Here are a couple of novelty bits.
+3760000	If you have any interest in digging into the web develop
+3767000	So, one of the cool things about the manifest is because it's so declarative in this way, it
+3780000	Team and this is pretty good at crawling the internet and they
+3787000	They can find manifest files and they can work on them to
+3796000	This but by default, what we can do is have them go out and
+3803000	The quality standards of our team and the window store team
+3808000	Windows even though they are web powered.
+3816000	Will actually be hwd's which are a version of the universal
+3825000	App wrapper around your website. What is cool is that you can
+3834000	Just by adding the manifest file.
+3842000	Is the first of -- step to create the things.
+3850000	That is something that has existed on edge for over a year
+3855000	Another form and get information from them, you can
+3866000	Will be the windows while it for apple
+3871000	Things that you can do to collect information from that
+3875000	You will have to reenter it or find
+3879000	The api is straightforward as well and in this case, we will
+3888000	Supportive message and in this case this will be the credit card information in the
+3899000	That are not actually a credit card itself.
+3907000	Which represents the supported networks so all the different types of credit cards
+3914000	And the ones we want to process at the company
+3919000	Create another object that is just for information and we
+3923000	Label for, this will be due and in addition to that, we will
+3927000	We can do request shipping so you get the address if you want
+3931000	Purchase. Thing, what is great is that
+3937000	The payment.Window, which is a feature request and
+3942000	The browser support payment request, the user gets that
+3959000	Not support it, you can go back to your old checkout.
+3967000	Realistically, it will be a couple of years before anyone
+3974000	Feature detection. This did come to chrome mobile
+3985000	Great it is to call into these native apis
+3991000	Little bit ago, and based pwa's are actually going to be apps
+4000000	Actually exposed all of our operating systems into
+4009000	If you actually took the window.Windows space, you have
+4020000	Of that within it and you can leverage things like the
+4027000	On the keyboard. The native ocr, you can do code
+4041000	You can have direct access and always apis that exist in the
+4048000	This is a new way to think about it and because it is easy to feature, you can start
+4055000	Browsers to support them and you can just do stuff.
+4065000	Do not wait to create a new application.
+4070000	I have been shipping them for years now even though they were
+4075000	It will work. I really want you to start applying now and start using
+4084000	Important thing is to get feedback if you can.
+4091000	If there's something you want to
+4095000	Encourage one another or tell the edge team what you want to
+4109000	Has included the top request and we take this incredibly
+4116000	Highly regarded inside of our team. We want to hear what you have to say.
+4124000	And otherwise, that is my email at the bottom and, yeah.
+4133000	>> I have a couple of minutes if anyone has a question.>>
+4159000	-- Payments? this is for proprietary database
+4169000	Crypto to get crazy with it but realistically, facebook and
+4176000	Websites, it is incredibly painful.
+4185000	You are slipping down a code. But, realistically there will
+4193000	And they can reverse it and figure that out as well.>> [
+4207000	That but it's just whether or not you're comfortable doing
+4214000	-- Then you cannot use it unfortunately. You have to continue to use api
+4221000	Line for the keyvalue but you
+4229000	Databases. Any other questions?
+4241000	>> [ Low volume ] >> which one?
+4262000	-- Nope.
