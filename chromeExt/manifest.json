@@ -1,0 +1,22 @@
+{
+    "name": "Kitaab",
+    "version": "1.0.0",
+    "description": "Books meet youtube",
+    "content_scripts": [{
+        "css": ["style.css"],
+        "js": ["script.js"],
+        "matches": ["https://www.youtube.com/watch*"]
+    }],
+    "permissions": ["http://127.0.0.1:8080/*"],
+    "icons": {
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+    "browser_action": {
+      "default_icon": "icon.png"
+    },
+    "background": {
+      "scripts": ["background.js"]
+    },
+    "manifest_version": 2
+}
