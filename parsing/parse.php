@@ -16,8 +16,6 @@ $data = json_decode(file_get_contents('php://input'), true);
 $service_url = $data['url'];
 $id = $data['id'];
 
-// $service_url = "https://www.youtube.com/api/timedtext?expire=1512230718&v=0Y6s2kKpULU&caps=asr&hl=en_US&signature=7367116D83569F9A2138652600245F30788F50AA.C2E4BAFA13242EBC0B41C959C6D5EA89ED6004A4&sparams=asr_langs%2Ccaps%2Cv%2Cexpire&asr_langs=de%2Cko%2Cja%2Cnl%2Cen%2Cpt%2Ces%2Cru%2Cit%2Cfr&key=yttt1&kind=asr&lang=en&fmt=srv3";
-
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $service_url);
 $headers = ["Content-type" =>  "text/xml"];
@@ -60,20 +58,7 @@ if ($fp = fopen($id.".tsv", 'w+')) {
     fwrite($fp, $create);
     fclose($fp);
 }
-// $prefix = "https://49afc650.ngrok.io/parsing/".$id.".tsv";
 
-// curl_setopt($ch, CURLOPT_URL,"http://35.199.154.16:8000/api/search_key");
-// curl_setopt($ch, CURLOPT_POST, 1);
-// curl_setopt($ch, CURLOPT_POSTFIELDS, "link=".$prefix."&keyword=".$keyword);
-
-
-// curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-
-// $server_output = curl_exec ($ch);
-
-// curl_close ($ch);
-
-// var_dump($server_output);
 echo json_encode(["status" => 200]);
 
 ?>
