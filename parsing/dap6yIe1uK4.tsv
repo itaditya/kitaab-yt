@@ -1,0 +1,980 @@
+880	welcome to this video great to have you
+3010	here in this video we'll have a look at
+5530	progressive Web Apps a super important
+8469	topic extremely hot these days and a
+10990	topic on which I created a very
+12730	comprehensive course on udemy link can
+15400	be found in the video description of
+16720	course now in this video though I want
+19390	to share the first module of this course
+21099	with you there we'll have a look at the
+23500	most important question what are
+25089	progressive web apps we'll build our
+27220	first little progressive web app
+28779	together and we will learn which topics
+32169	make up a progressive web app which
+34090	features now we'll probably use some of
+36910	these features in future projects on
+38559	this channel and therefore I'd be more
+40600	than happy to welcome you on the course
+42010	but first let's dive into the first
+44050	course module and learn these basics I
+46629	mentioned
+52530	while I can't do this course it's great
+54760	to have you on board in this course
+56920	we're going to dive super deep into the
+59260	topic of progressive web apps now
+62140	progressive web apps that is a term
+64780	which is pretty hot these days but it is
+67900	a topic which is definitely here to stay
+70350	progressive web apps in the end describe
+72640	a set of features of technologies you
+75100	can add to your existing web
+76810	applications to turn them into native
+79630	app like native mobile app like
+81729	experiences using device features like
+84490	the camera and providing offline access
+86640	now in this course you will learn all
+89530	about what progressive web apps are why
+92290	you might want to use them and you will
+94509	of course use them and learn all the
+96490	core technologies that make up this term
+99009	progressive web app you will of course
+101860	all learn this by building a real course
+104530	project and adding these features step
+106840	by step will start simple but will soon
+109960	add a way to install our application on
+112660	the home screen of a real mobile device
+114640	we'll find a way of making our app
+116830	available even if internet connections
+118960	lost and will do way more will access
+122170	the device camera and location will be
+124780	able to send push notifications and
+126820	synchronize data in the background even
+129100	if we are offline this is what we'll
+131890	build and learn in this course now who
+133989	is teaching you my name is max moon
+136150	Schwarz Mullah and I'm a freelance web
+137890	developer I worked a lot with
+139540	progressive web apps and I can tell you
+141610	there's never been a better place or
+143290	time to learn it the features which make
+145959	up progressive web apps are well
+147670	supported already you can already reach
+150100	a huge audience with all these features
+152650	and the cool thing is you build
+154600	progressive web apps in a way that your
+156489	web apps still work on older browsers
+158530	too now is the time to learn it to be
+161140	prepared for a future where probably
+163540	every web application will be a
+166000	progressive web application since it
+168400	offers significant advantages and makes
+171549	your application much more enjoyable to
+173680	your users
+178930	so let's dive into progressive web apps
+181510	by answering one important question
+183189	first what are progressive web apps
+186159	it's a term which you might have heard
+188290	already but sometimes it's hard to
+190450	really say what it means in the end
+193329	progressive web apps is just a term
+195730	referring to a couple of features you
+197980	can add to any web application to any
+200260	web page running in the browser
+201819	therefore to enhance it this is what
+205390	progressive web apps in the end are
+206590	about you progressively enhance your
+208989	existing web pages to feel and work more
+212709	like native mobile apps I'm not just
+215470	talking about responsive design so that
+218139	it looks good on both devices we're
+220389	doing this since a couple of years
+221980	already or you should be at least I'm
+224530	talking about other things you know from
+226540	native mobile apps like your app working
+228939	if you're offline it having an icon on
+231459	the home screen
+232180	things like accessing the device camera
+234819	or the location synchronizing data in
+237819	the background these are all features
+239950	which were hard to do in web
+241870	applications in the past nowadays we got
+245079	browser support in a lot of browsers for
+248019	that and we can therefore use that now
+251109	in this course I will show you how to
+252940	use all these technologies which make up
+255790	a progressive web app and of course I'll
+257620	also explain which technologies these
+259299	are and I will show you how to implement
+261760	them in a way that it also works on
+264130	older browsers that your web page still
+266830	works on older browsers because that's
+269080	the core thing you progressively enhance
+271630	a web application it's not at all or
+274150	nothing move it's not like it doesn't
+276039	work on older browsers anymore it just
+278199	means if you have a modern browser on a
+280449	mobile device you get an awesome
+282639	experience otherwise you'll get the
+284500	experience you've gotten anyways there
+287770	are three main words I'd say by which
+290830	you can summarize progressive web apps
+293020	they should be reliable which means they
+295810	should load fast and even work if you're
+298210	offline at least a part of the
+300699	application should work if you're
+301990	offline now this is really a core thing
+305320	of progressive web apps we're talking a
+307779	lot about that initial load the first
+310270	time you wizard an application
+311740	you open it because if you consider
+313830	application running on your mobile
+315610	device most of them start up pretty fast
+318280	so long loading times you don't want
+321430	that additionally it should be fast not
+324610	just during load up but also when sand
+327310	runs it should react to user input it
+330160	should provide animations it should be
+333490	able to access native device features in
+335770	an intuitive way and we also want to
+339310	make sure that it's engaging we want to
+341800	get our users back into the app we want
+344020	to offer features like push
+345430	notifications to inform them even if the
+347919	application is closed yes you heard that
+349840	correctly this is what you can do and
+351909	what we will do in this course so that
+355690	is what makes up a progressive web app
+358750	now why would we want to build one
+362050	obviously we have some good arguments
+363909	here but couldn't we achieve the same by
+366340	just building a normal mobile app with
+368830	Java Android or with Swift objective-c
+372810	well let's find out which arguments
+376240	speak for a web app instead of a native
+378699	mobile app
+383600	let's compare native apps with mobile
+387120	apps to find out if it makes sense to
+390000	build a web app to begin with here's a
+393150	number of which might discourage you but
+395520	no worries I'll say more about this
+397830	number over the next seconds if we have
+400860	a look at the usage of our smart phone
+404460	here's a report by comScore from 2015
+408360	made in the u.s. we see that the average
+411449	smartphone user spends 87% of his time
+415260	in native apps whereas only 13% of the
+420210	time go into the mobile web so the user
+423120	visiting a web page in the browser on
+425400	the mobile phone now it is clearly
+427770	discouraging because why would we build
+429990	a mobile web app if a native app is so
+433800	much better let's first of all find out
+436229	why people spend so much time in native
+438870	apps one important factor are push
+441570	notifications they drive them back into
+444600	the apps you get a push notification you
+446850	tab on it you're back into the app push
+449550	notifications communicate with you even
+451740	if the application is closed even if the
+454740	phone is tucked away into your pocket
+458360	additionally we have home screen icons
+460710	which make it easy to start yet you pull
+463710	out your phone you have some time to
+465300	spare just open one of the apps and
+467460	that's it this is how you use it right
+468990	that's harder for web apps web pages of
+472200	course you can't add them to the home
+473940	screen but it's not like you're
+476010	prompting the user to do so you don't
+478200	have the app store where people would go
+480030	and search for you so getting on your
+482430	home screen traditionally has been hard
+484080	for a web apps it's a huge plus for
+486060	native apps though additionally we have
+489300	access to native device features like
+490950	the camera geolocation and other things
+493380	and of course many native apps also work
+496979	offline at least a certain part of these
+499650	apps were it's offline
+500940	these are all good reasons why people
+503340	are using native apps now as I already
+505800	said the cool thing about progressive
+508020	web apps is that we can basically bring
+510240	all these things into the web too so
+513419	maybe this can switch relations that's
+516390	not the only
+517080	argument for the mobile web though even
+519330	though today a lot of the people are
+520920	using native apps let's have a look at
+522900	some arguments against native apps one
+526080	argument is that you of course have to
+527790	learn two languages if you want to
+529710	support iOS and Android or you need
+532320	multiple developers what be nicer if you
+535200	could just write our application in the
+537690	language you already know HTML CSS
+539970	JavaScript and so on so if you could
+541920	just use web application now the better
+544890	argument is this number though even
+547470	though the majority of users uses native
+549630	apps 80 percent of the time goes into
+553020	the top free apps which unfortunately
+555840	probably isn't your app it's most likely
+559080	Google Facebook whatsapp something like
+561630	that so there's only very little time to
+564810	spare for our apps and here's one our
+567900	figure how many new apps do you guess
+570900	does the average user install per month
+574200	on his phone or her phone does you get
+577920	something 1 5 10 its zero absolutely
+582000	zero the average user doesn't install a
+585630	new app you install new apps if you have
+587760	a new phone but thereafter you rarely
+589740	add new apps these are the statistics
+593340	that makes clear that the web has
+597240	something big to offer its reach let's
+600270	compare the reach we have the top
+602520	thousand native apps and web pages
+605070	visited from mobile in the native apps
+608280	we have 3.3 million users in the web
+611010	apps we have 8.9 so even though less
+614760	time goes towards the web more people
+618390	are visiting it we can reach a broader
+620490	audience there the reason of course is
+622650	connected to the figure of the eighty
+624660	percent being spent in the same app
+626430	people do spend a lot of time in native
+628650	apps but always in the same apps the
+630810	average app doesn't get that many
+632790	visitors now the web has a huge
+634800	advantage you don't need to install
+636540	anything from the App Store which takes
+638220	time in which you have to do actively
+640470	you search for something Google shows
+642810	the result boom you're on your webpage
+644960	you take a bookmark and you're back so
+648570	this is how you
+649880	the web it's so much easier to get onto
+651890	these web pages and that's a huge
+654110	advantage off the web now since we can
+657230	get advantages of the native device
+659920	offline access camera ends on to the web
+663940	combined with that figure
+666140	sounds like progressive web apps aren't
+668600	that bad of an idea let's confirm this
+671630	hypothesis by having a look at this
+674420	comparation
+675050	we have native apps and traditional web
+678140	apps so no progressive whether a
+679790	traditional web app which doesn't offer
+682280	access to any native device features if
+685010	we compare them by capability and reach
+688000	the native app of course has awesome
+690590	capabilities we can leverage the
+692540	operating system and access a lot of
+694970	native device features on the apprehend
+697670	the reach isn't that good for the
+699080	reasons we heard about a web app on the
+702170	other hand a traditional one doesn't
+704660	really have access to all these device
+706100	features it probably doesn't run offline
+709040	so that's not too good but the reach is
+711560	really good you can find it while Google
+713750	it's just one address in the URL bar
+716210	away a progressive web app now combines
+719750	the best of both worlds there we can
+723290	access a lot of the native device
+724940	features we can make it available
+726590	offline and we do have good reach of
+730610	course because it's still a web app
+732260	still running in the browser this is
+734780	well we will focus on progressive web
+737180	apps in this course and while learning
+739010	them really is a good idea you can get
+741770	the best of both worlds and deliver
+744110	awesome experiences to your users
+750690	so over the last lectures we learned
+753180	what progressive web apps are and why we
+755940	might want to build our next web
+758190	application as a progressive web app now
+761490	let me show you an example for a
+763379	progressive web app at F dot F T com
+766949	you can wizard the application page of
+769110	the Financial Times this runs in the
+771540	browser but it is a progressive web app
+773759	it feels a lot like a app if we navigate
+776850	around there with the animations and the
+778920	menu and if I open my chrome developer
+781470	tools and I switch into device mode by
+783329	pressing this icon here you see of
+786360	course it also looks like a mobile app
+788490	now a cool thing happens if I now do the
+792269	following if I go to network in the
+795329	chrome developer tools which as strongly
+797279	recommend using I recommend using Chrome
+799050	for this course because it supports all
+801209	the features you're going to learn about
+802560	and its developer tools are awesome more
+805170	about this later so if you go to network
+807720	and click on offline here you can
+809970	simulate that you're offline now if I
+812639	reload that page you still see some
+816019	content the images are not there I give
+819120	you that but you can still read that
+821009	article here this is because it is a
+823560	progressive web app offering you some
+826050	nice features now Google even built a
+829800	tool which you can use to judge how well
+832740	a site performs as a progressive web app
+835470	and it's built right into the developer
+837630	tools if you're using the latest version
+839339	of Chrome it's light to cows a day if
+842819	you don't have the order tap here though
+844860	you can simply search for lighthouse
+847079	Chrome and then find the page where you
+849810	get installation instructions about
+851399	lighthouse you can add it as a Chrome
+853170	extension dead now if you do have that
+855899	audit tab let's perform an audit on the
+858720	Financial Times page here and this will
+860790	now do a couple of checks to find out
+863130	how well this performs as a progressive
+865829	web app let's wait for this to finish
+867600	and analyze the results so the test is
+871319	done and overall the page does okay a
+873809	couple of features are missing which
+876420	would make it a really good or awesome
+878579	progressive web app and the performance
+881009	isn't that great here but that might
+882389	also be connected
+883620	my performance here on the machine while
+885720	some recording so this is a decent
+889050	progressive web app implementing a lot
+890940	of the features and I will also explain
+893279	in one of the next lectures that it is
+895050	okay to not reach 100 here you do have
+898260	the choice between going all the way to
+901200	it not at all or any step in between you
+904560	can add features off that progressive
+907110	web app world as you need them in your
+909540	app so this is nice now I wanna show you
+912360	a number page you can't open that
+914700	because it's offline but this is the
+916560	course project we'll build it say
+918990	Instagram clone a simple one of course
+921000	as a progressive web app it looks and
+923580	feels nice in my opinion the cool thing
+926310	is that this of course is a progressive
+927960	web app now one thing we can do is we
+930180	can take an image so let's allow camera
+932520	access and hey Here I am so let me
+934980	quickly take an image here you'll see
+937260	I'm sitting in front of a green screen
+938490	let's also get my location so I'll need
+941430	to allow that to fetch it
+943500	it'll be masked here I don't want to
+945630	show my full location and then let me
+948930	enter some title during my recordings
+953070	and keep in mind this is in the browser
+955350	it's just looking like on a real device
+957180	throughout the course though I will also
+959640	show how the app runs on a real device
+961700	so for now let me click post here to
+964410	post this now let's say for syncing and
+967290	if we reload there it is already so this
+970890	has been saved on some server now again
+973860	you can't access this page here but you
+975810	will build it on your own and we will
+977580	also ship it to the web at the end of
+979589	the course now thus far you might think
+982589	it's nice that camera thing is nice but
+984930	not super impressive now let me turn off
+988020	my Wi-Fi here to really have no internet
+990600	connection anymore if I reload the page
+993000	you can ignore these errors because they
+995430	are basically catched and I still see my
+998550	page even my content here and I can
+1000860	still navigate around now there's one
+1004160	more thing I want to do for which I will
+1005810	need internet connection so let me
+1007160	quickly turn it on again I want to
+1010100	enable push notifications so let me
+1013280	click here and allow access and now I
+1016280	get day
+1017510	push notification here on my other
+1019940	stream so unfortunately this isn't
+1021709	recorded because push notifications were
+1024170	turned on now with dead let me now go
+1027589	offline by turning off the Wi-Fi and now
+1031010	I'll try to send another post let me
+1033230	take a picture and that sent us from
+1037819	offline mode I'm in Munich let me a post
+1041449	here and it's also saved for
+1043250	synchronization
+1044360	now clearly it can't send it I have no
+1046610	internet connection so let's say I now
+1049820	come back online because my Wi-Fi
+1052840	reestablishes connection now it's
+1056000	syncing this and if I reload the app
+1058280	here it is from offline this is what
+1062690	makes this a progressive web app a lot
+1064790	of the features you might know from your
+1067250	native apps but you haven't seen that
+1069679	often in a web app this works fully
+1072950	offline it caches everything at all
+1075140	accesses to device camera has pushed
+1077900	messages as you saw and much more so now
+1082100	let me conclude this by making an audit
+1084049	on this app too so that you can see what
+1086030	you're going to build in this course
+1087290	let's perform an audit here with
+1089540	lighthouse again and let's see how many
+1092360	features about progressive web apps I
+1094490	packed into this application and what
+1097520	you're going to learn in this course
+1099080	therefore I'll be back once this audit
+1101480	finished the audit finished and here you
+1104720	can see I got a 100 in progressive web
+1107299	app so this is a perfect progressive web
+1109790	app using all the features that make up
+1112549	a progressive web app you see the ever
+1114470	met ryx are also amazing and that means
+1117380	you're going to learn a lot of useful
+1119390	things in that course because we'll
+1122210	start from scratch we'll build this app
+1124100	together and add all these features that
+1126380	lead to this 100 together can't wait to
+1129230	get started with you
+1134950	now that we learned a lot about what
+1137509	progressive web apps are and why they
+1139429	are awesome let's build our first very
+1142309	simple one and for that as I already
+1144769	mentioned it
+1145639	please use Chrome I strongly recommend
+1147860	it because whilst we will build it in a
+1150350	way the course project I mean then it
+1152690	also works on older browsers you of
+1155299	course want to see all the new features
+1156919	you're using right and Chrome is one of
+1159230	the browsers which supports most of them
+1160940	work all of them actually we will use in
+1163039	this course so I recommend using it now
+1165259	throughout the course I will always
+1166370	highlight which browser supports what
+1168320	but again chrome is the one supporting
+1170149	everything
+1171230	additionally the developer tools are
+1173029	awesome I'm going to use it and it'll be
+1175159	easier for you to follow along if you're
+1177110	using Chrome of course you can go back
+1179360	to your favorite browser or author of
+1180860	this course again then besides Chrome
+1183080	will also need note j/s now we're not
+1185720	writing a server-side application here
+1187669	but no J's ships with NPM its package
+1190970	manager and it's the defective package
+1193759	manager for development projects for
+1196399	front-end JavaScript development
+1198080	projects and we will use a tool to
+1200149	install some dependencies mainly one
+1202789	dependency a development server to
+1205009	really simulate that our application
+1207139	runs on a server even though it runs on
+1209090	the local device so make sure to is it
+1211399	node.js org and simply download the
+1213830	latest version if your problem if you're
+1215899	having problems with that choose 6.11
+1218570	instead or whatever the latest a low
+1221090	version is at the point of time you're
+1222470	viewing this so make sure to download
+1224389	and install node.js again we're just
+1227090	using it to bring up that development
+1229399	server and to manage our dependencies
+1232009	our libraries and so on once you got all
+1234950	of this setup attached to this lecture
+1236600	you can find a download download it and
+1239749	open it in your favorite IDE sublime
+1242529	atom webstorm Microsoft whistles to you
+1246049	code whatever that is this is the
+1248210	starting project we'll use here later
+1251059	this course will use a different project
+1252830	though now you're first of all with no
+1255409	chase installed you need to open up your
+1257779	terminal or command prompt on your
+1260299	operating system and this here is the
+1262129	normal terminal just integrated into my
+1264379	IDE and navigate into that project
+1266509	folder and in there simply
+1268580	npm install NPM refers to this node
+1271370	package manager we installed
+1272750	automatically together with node once
+1275750	you hit enter distance will install all
+1277430	dependencies which is only one in our
+1279710	case you can check it in the package the
+1281540	JSON file it's this HTTP server here now
+1284870	this simply is a development only server
+1286910	why don't we just double click on the
+1289310	HTML files because if we double click on
+1291830	them we use the file protocol and that's
+1294170	not HTTP and for that reason all the
+1297470	features I want to show you won't work
+1298940	because it's not really served like a
+1300650	web application we want to simulate it
+1303080	as such though and test it as such hence
+1305150	we need a web server and this is a super
+1307730	simple development only server where we
+1309800	don't need to write any code to get it
+1311810	to run our app once you did install it
+1314870	you can run NPM start in the same
+1317030	terminal and keep that running because
+1319190	the server needs to keep running and
+1320720	then here you see the URL under which
+1322820	you can see your application
+1324140	now let's out MIT by simply navigating
+1327020	back to the browser and entering your
+1328490	entering it here you could also open
+1330440	localhost 3000 by the way and you will
+1333410	see this is the application I want to
+1335180	start with it lays a nice little
+1337100	animation showcasing the advantages of
+1339740	progressive web apps and what you're
+1341720	going to learn in this course it's nice
+1344750	but it's a normal website let's turn it
+1348140	into a progressive web app together back
+1350810	into your project open the public folder
+1353810	and there you see that SW dot J's file
+1357140	that's going to become important I'll
+1359570	explain what it is a Service Worker
+1361730	later in this course now for now let's
+1364640	go to source j s and then the app dot
+1366800	J's followed here's a very simple code
+1369920	to run that animation by simply adding
+1372440	CSS classes every X seconds now before
+1376250	we execute that let's do something else
+1378680	let's run navigator dot serviceworker
+1384040	register and there has a string where
+1389300	you point to slash s wjs so basically to
+1392510	that file that's all for now
+1395800	just add this line now save it and
+1399410	thereafter
+1401440	load your page now let's open up the
+1405909	developer tools and go to the
+1408899	application tab should click on
+1411460	serviceworker you now see that this is
+1413620	populated we'll come back to what
+1415960	exactly happened here later in the
+1417250	course
+1417669	you also see I'm previewing this as a
+1420100	native device or as a mobile device you
+1422379	can always toggle between these displays
+1424269	I like this quite a lot because we're
+1426279	building something which should look
+1427419	good there so why don't we use it here
+1428980	and now with that let's take offline
+1432399	here or under network offline
+1435509	also make sure you disable the cache
+1437919	here under Network now if we reload the
+1440200	page you see it still works even though
+1444490	we have no internet connection anymore
+1446169	and you could say yeah makes sense it's
+1448509	running on my local machine right yeah
+1452559	but if we take the offline button your
+1454779	Chrome will basically simulate that this
+1457000	internet is is off that this browser
+1459519	can't connect to this server and keep in
+1461980	mind we have a real web server here
+1463960	because we did start one we didn't just
+1466149	double-click the HTML file as I
+1467919	explained so this really is working in
+1470379	offline mode and if you don't believe me
+1472600	go to the application serviceworker and
+1474730	click unregister there and reload again
+1477269	now you get this there is no internet
+1479860	connection screen this is our first
+1483220	application where we successfully
+1486299	register a serviceworker so that our
+1489009	application works even if we are offline
+1492009	now we'll learn much more in this course
+1494860	but this is a great first step and we'll
+1497679	build up on this and learn how we can
+1499450	use different strategies to decide what
+1501850	to store for offline usage and what not
+1503950	how to add these push notifications and
+1506470	much more I can't wait to dive into that
+1509110	with you so if that let's not lose any
+1511690	time and let's continue seeing what
+1513970	exactly makes our progressive web apps
+1515740	and which features you're going to learn
+1517509	about in this course
+1522740	thus far we already had a look at what
+1526040	progressive web elves are why we might
+1528410	want to use progressive web apps or
+1530030	build them and what we're going to build
+1532850	in this course now when I have a look at
+1535340	the core building blocks technologies we
+1538190	use when building progressive web apps
+1539840	because thus far we only had some
+1542120	buzzwords we heard about offline access
+1545090	and push notifications but let's now
+1548060	really have a look at all the features
+1549740	we beus and you'll learn about in this
+1552410	course when building progressive web
+1554120	apps a core feature our service workers
+1557390	service workers are supported in modern
+1560060	browsers like Chrome and service workers
+1562940	are basically JavaScript running in a
+1565010	background process even if your
+1566990	application is closed service workers
+1569750	are a core building block because they
+1571610	allow us to get offline access to cache
+1574520	some files and serve them if we don't
+1576290	have an internet connection and they
+1578300	also give us access to other progressive
+1580910	web app related features for example
+1582710	background synchronization sending a
+1585230	request once internet connections we
+1587090	established we use service workers for
+1589160	that Porsche notifications would be
+1591440	another example we use service workers
+1593360	for that because they are running in the
+1595430	background independent of currently
+1597500	opened tabs service workers therefore
+1600770	our D core building block and I have a
+1603800	couple of modules diving into all the
+1606170	different things you do with them also
+1607970	advanced lectures advanced modules
+1610340	you'll learn a ton about them in this
+1613070	course service workers are not the only
+1615770	building block whilst we can use them
+1618530	for offline access background
+1620210	synchronization web push and more the
+1622640	application manifest is also an
+1624920	important building block you're going to
+1626750	learn about this in the next course
+1628310	module already the application manifest
+1630590	makes your application installable on
+1632780	home screens not installed through an
+1635180	app store but instead well you will see
+1637790	it you can basically install a web app
+1640010	and then we'll do more than just open
+1642320	that web page a web manifest is
+1644690	therefore a super important and another
+1646610	feature you typically use or you use in
+1649160	any progressive web app you're building
+1650900	and then you can add more and more
+1653570	features now besides the acknowledged
+1656050	we use responsive design is an average
+1658660	or balding block now to be honest I
+1661540	won't dive too much into it in this
+1663310	course because there already are whole
+1665470	courses covering this out there and
+1667590	responsive design is something we're
+1669700	doing since a couple of years already
+1671890	so therefore definitely make sure you
+1674500	notice and I will touch on it in this
+1676240	course but I will focus on all the new
+1679030	technologies all the things which aren't
+1681250	covered that well in the internet yet
+1683100	now and then there are other things like
+1686110	the geolocation API or the camera API so
+1689350	that we can access various native device
+1691660	features and I will dive into that in
+1693820	this course too these are the core
+1696220	building blocks in the end always keep
+1698530	in mind progressive web app is just a
+1700510	term it in its closest definition refers
+1704050	to app which uses service workers and
+1706150	has application manifest but it
+1709000	typically also means applications which
+1711040	are responsive which offer backgrounds
+1713350	which use web push and more and you're
+1716200	going to learn all of that in that
+1718120	course
+1722630	now that we learned about the core
+1724890	building blocks let me make one
+1726930	comparison which is sometimes made and
+1729090	which is kind of wrong single page
+1731190	applications and progressive web apps
+1733230	now in case you don't know single page
+1735540	applications are applications web
+1737580	applications powered by JavaScript
+1739950	typically created with a framework like
+1741750	react angular or view where the
+1744900	framework re renders the Dom all the
+1747930	time to react to user input to display
+1750690	different pages once you only have one
+1753030	single page one HTML fall single page
+1755970	applications are not the same as
+1757290	progressive web apps and actually
+1758910	progressive web apps as I mentioned it's
+1761130	just a collection of technologies and
+1763140	techniques and it runs totally
+1765060	independent of your app being a single
+1767760	page application or not you can turn any
+1770190	single page application into a
+1771690	progressive web app and the same is true
+1773490	for any traditional multi page
+1775620	application where you render your views
+1777960	from your server by a node PHP whatever
+1781110	it is so this is the wrong comparation
+1783870	a single page application is powered by
+1785760	JavaScript as I said typically using a
+1788040	framework it has highly reactive because
+1791010	things happen instantly because we don't
+1793170	send the request to the server and wait
+1794970	for a new page and as I said we only
+1797160	have that single page a progressive web
+1799860	app is just a collection of technologies
+1801180	can be used anywhere it typically also
+1803760	uses a lot of JavaScript because the
+1805800	serviceworker for example uses
+1807720	JavaScript and your serviceworker is
+1809370	very important but the serviceworker
+1811770	isn't controlled by any framework
+1813750	anyways so the JavaScript use here can
+1816120	be vanilla JavaScript without a
+1817890	framework and actually in a course
+1819960	project will use a project which just
+1822720	uses vanilla JavaScript and multiple
+1824730	pages because I wanted to show the most
+1826950	flexible project I can to really show
+1829590	you that what you learn in this course
+1831450	can be used in any project no matter if
+1834450	that's a single page app or not towards
+1836940	the end of the course I have a module
+1838800	where I show you how to turn your react
+1841020	angular or view app into a progressive
+1843690	web app but for the majority of the
+1845400	course I just show you code which just
+1847470	works in any project no matter if single
+1850410	page or multi page now a progressive web
+1852930	app still also aims to will be high
+1855350	react if you could say but here we're
+1858080	focusing more on the initial loading
+1860179	time we want to get something onto the
+1862730	screen fast for example by caching it by
+1865610	even making it available offline it's
+1868070	not so much about what happens
+1869600	thereafter of course there are some
+1871549	things we want to use like animations to
+1873980	provide a nice user experience but we
+1876200	don't care if you load new pages for
+1878960	every request or if you use JavaScript
+1881660	to re-render the page often times you
+1884390	will see single page applications being
+1886730	progressive web apps as well but as I
+1888830	mentioned that's no hard requirement and
+1891220	finally as I just said progressive web
+1894140	apps can work with multiple files too
+1896150	and actually that's not that uncommon
+1897770	you can absolutely use progressive web
+1901220	app anywhere you can turn any web page
+1903200	into a progressive web if you want to so
+1906289	that's the wrong comparation
+1907610	we can use the progressive web app
+1911510	concept on a single page application but
+1914000	we can also use it on any other
+1915260	application
+1920310	there's this other cool concept I want
+1923280	to emphasize as well it's a progressive
+1925860	web app what does the progressive
+1928050	actually mean it doesn't mean you can
+1930420	use the device camera indeed it
+1933360	basically means that we can
+1935460	progressively enhance our web
+1937470	application so let's consider this
+1939960	starting point we have three different
+1941850	web apps one is a legacy web app so an
+1944700	older web app using older technology and
+1947580	probably also supporting older browsers
+1950220	then we have an existing modern app
+1952800	which is maybe also a traditional web
+1956220	app not not a single page application
+1958110	nothing fancy but it targets modern
+1961650	browsers because maybe it's an internal
+1963690	company tool or some page which mainly
+1966930	addresses tech infuse yes something like
+1969240	that and maybe we have an upcoming
+1971160	project and there we can pretty much
+1973680	Bank on people having more modern
+1975630	browsers because support is already
+1978240	getting better more people are using
+1980250	modern browsers it's probably going to
+1982290	be better in the future too so if these
+1984720	free different apps can we only turn the
+1987750	upcoming project into a progressive web
+1989610	app now because rewriting an existing
+1992700	app from scratch certainly is an option
+1994740	so if you want to turn this into a
+1996480	progressive web app you can't just start
+1998790	over well let's have a look at the near
+2001220	future we can simply add some features
+2004220	to our existing app and this is actually
+2007190	something I will show you in the course
+2008390	we will take a project and add features
+2011090	step by step and you can stop at any
+2014270	given point you can stop after adding an
+2017210	app manifest and a basic Service Worker
+2019220	you can stop after you implement the
+2021530	basic caching advanced caching push
+2024020	notifications you can stop all the time
+2026260	now your existing modern app here you
+2029060	can maybe open some more progressive web
+2031490	app features and for the upcoming
+2033080	project yet there you can start from
+2035120	scratch obviously so you can fully
+2037070	implement it as a progressive web app
+2039320	right from the start and plan everything
+2041510	with that in mind now in the further
+2044720	away future our older application might
+2048679	use some more Malta
+2050360	progressive web app futures but not all
+2052040	of them and it's perfectly fine you
+2053810	don't have to use 0 or 100 percent you
+2057110	can absolutely use 40% of all the
+2059960	features you learn in the course pick
+2061700	the ones which enhance your application
+2063620	and add them now therefore our middle
+2067430	app here
+2068210	maybe is a completely converted
+2069890	progressive web app in the end because
+2072500	we added all the features which make up
+2074570	a progressive web app we have solid
+2076310	caching and different circumstances we
+2078710	use push notifications and all that
+2081440	stuff and our upcoming project already
+2084110	of course was planned as a progressive
+2086690	web app and therefore also as one and
+2089000	this is important because I know that a
+2091490	lot of people are looking at all these
+2093200	technologies and are saying well I don't
+2096050	have the resources or the time to
+2098450	rebuild my old app and I have to support
+2101150	all browsers anyways these users are
+2103280	never going to see the new features and
+2105020	I can only answer you that's not a
+2107390	problem simply add the features which
+2110060	enhance your application right now and
+2112150	feel free to turn it into a complete
+2114500	progressive web app if you have the time
+2116210	definitely consider it for all upcoming
+2118460	projects though
+2121550	you
+2123589	so there was a lot of talking about what
+2126349	progressive web apps are why we use them
+2128509	and what we're going to build in this
+2129680	course now let's see what exactly
+2132499	we'll learn in this course and how we'll
+2134479	walk through all these topics well right
+2136910	now we're still getting started
+2138229	but we're almost done and the next
+2141079	module will have a look at the
+2142369	application manifest this is days
+2145329	document which tells the browser more
+2147920	about our web application and you'll
+2150410	learn everything about it in the second
+2152420	module thereafter will already dive into
+2155209	service workers because they are such a
+2157219	core building block now service workers
+2160339	and in general a lot of progressive web
+2163009	app features use promises and the fetch
+2165739	API therefore I'll have a short module
+2169069	where I briefly refresh the knowledge
+2172489	about these core concepts so that we're
+2174799	all on the same page because we're going
+2176839	to use a lot of promises and the fetch
+2178759	API throughout the course it's easy to
+2180769	use that I just want to make sure that
+2183199	we all know what we're using there now
+2186079	once you got that refresher we'll head
+2188779	back to the service workers and learn
+2190939	how we can use them to provide offline
+2192890	access through caching well then
+2195559	continue on this road and dive into
+2197779	advanced caching strategies using
+2199729	service workers to really have the right
+2202099	strategy for which ever assets you going
+2205009	to load in which every situation in your
+2207619	app after that we'll have a look at how
+2211459	we can catch dynamic content with
+2213799	indexed DB because thus far we will have
+2217099	cached assets like CSS files script
+2219499	files images
+2220670	now what about JSON data you get back
+2222829	from a rest endpoint we can cache that
+2225079	too and there you will learn how to pass
+2227390	do that once we did that we'll have a
+2230179	look at responsive design now already
+2232910	said I won't dive into it super deeply
+2235489	here because there are whole courses
+2237259	about that and you can indeed create
+2238999	whole courses about that so I just want
+2241219	to give you some core features some
+2244039	basics you need to know but I definitely
+2246619	encourage you to pick up a separate
+2248479	course on this topic it's super
+2250160	important and more than I could fit into
+2252709	this course where I really want to focus
+2254989	on all the other core
+2256680	technologies now with responsive design
+2259770	added we'll go back to these new core
+2263089	technologies and we'll have a look at
+2265710	background synchronization next which
+2268230	describes the process of us sending
+2271230	something while store offline and
+2272849	therefore of course it would fail but of
+2275670	a way to store that and send it when the
+2278670	internet connection is re-established
+2280190	even if we did close the application by
+2283109	then you'll learn it in this module and
+2285859	thereafter we have a look at web push
+2288359	notifications so how we can receive and
+2291839	send push notifications even if our
+2294690	application is closed now as a next step
+2298349	we'll have a look at the media API at
+2300839	geolocation these are not strictly core
+2303390	features of a progressive web app but
+2305300	since you typically use native device
+2307680	features in progressive web apps it's
+2309540	super important to know how to use two
+2311670	of the most important and popular
+2313290	features you can use on a real device
+2315720	and I'll dive into this in this module
+2317780	now after that we learned a lot about
+2321000	different technologies and we'll see
+2324630	that it can get hard to manage all our
+2327390	service worker code therefore well then
+2330720	dive into automated Service Worker
+2332549	management I will show you a tool you
+2334950	can use to make a lot of the things you
+2338160	had to do manually before easier by
+2340799	doing them automatically once we did
+2343319	this I'll dive into single page
+2344880	applications and progressive web apps to
+2346770	show you how to turn your number one
+2349349	favorite framework application into a
+2352589	single page application with these with
+2355589	that we'll have learned a lot this
+2358650	course will do more than just get you
+2361680	started with progressive web apps it
+2363599	will really allow you to use that
+2366119	knowledge dive deeper use it in your
+2369270	next project and I'm super excited to
+2371520	get started so let me spend one more
+2374040	word about the course project setup and
+2377130	how you get the most out of this course
+2379470	and then we'll get right started and
+2381630	dive into the application manifest
+2385619	I hope you enjoyed this first module of
+2388200	this course now there we had a look at
+2390269	what progressive web apps are and why
+2392490	they are awesome
+2393450	obviously I'd be more than happy to
+2395279	welcome you in this course so that we
+2397349	can go through all these topics together
+2399329	and then also of course use some of them
+2402269	in future projects on this channel
+2404670	hopefully see you there have a great
+2406740	time bye
