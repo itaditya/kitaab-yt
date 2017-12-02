@@ -1,0 +1,624 @@
+1830	[Music]
+8480	hi guys this is Boston again from coding
+11849	this Matt Wacom and today in this new
+14639	video tutorial I'd like to talk about
+17150	progressive web applications some pwace
+20730	and pwace again more and more popularity
+25260	at the moment and it's very likely that
+28109	you already have been using a PWA
+31279	without noticing for example if you take
+35219	Twitter comm this is the there's a
+40590	website which is already using
+42559	progressive web application our
+44850	functionality and in this tutorial I
+49320	will explain what are the main building
+51690	blocks of a progressive web application
+53879	and then we will explore how we can take
+56460	an existing website and edit those
+59160	building blocks to the project and
+60960	enhance that website was features of a
+64500	progressive web application so first of
+67650	all we need a website and to make it
+71970	very easy we will just use a template
+75720	which is available here at start of
+77670	bootstrap calm and start bootstrap calm
+81920	offers you a free bootstrap based on
+85280	website themes and templates and it's
+89520	pretty much okay because we only need a
+91259	website where we can apply progressive
+94530	web app functionality to and to get that
+98579	website we will use here a template
+100439	which is called freelancer and this
+103950	template is Weibull at start bootstrap
+105899	comm slash template - over views -
+109200	freelancer of course you are free to use
+111630	any other template any other website
+114170	this is just an example that we have
+116969	something where we can start was and
+118950	adding the features we would like to
+121560	talk about so to get started here with
+124890	the template just hit a download button
+128610	here
+129789	and it's downloading a zip file here and
+132969	now we can extract it to a folder of
+135219	your choice and then start working with
+138849	project so Kay have already extracted
+144159	that zip file and here in that folder a
+149069	waa - test - the one and we can take a
+155170	look inside you can see all here are the
+158680	files of the project and that is there
+163840	is our starting point here and I'd like
+167260	to run a development web server here so
+169750	that the website is hosted here on my
+173859	machine and I'm using a live server
+178239	which is a web Latin NPM package so if
+181540	you have not used last server before you
+183909	can install it by executing 10 p.m.
+187299	install - G live - server this command
+193659	is installing live server globally on
+195489	your system
+196720	I have already installed live server and
+199599	that's the reason why the command live
+202000	server is a Weibull and if I execute
+204250	live server here within my project
+206079	directory hitting return here you can
+209049	see it's starting up a web server on my
+211930	machine port 8080 and the web site is
+215409	running here and you can see that still
+217989	the freelancer template it's just one
+222310	one site here I have a navigation menu
+224859	here I can click on the items and go
+229709	here to the different sections on that
+235329	page ok so the first building block
+240370	which I'd like to add to my application
+243780	for progressive web application gives
+249280	the web app manifest file of weapon
+253030	manifest is a file which is
+256459	written in JSON format and is containing
+259850	some information about the application
+262520	of the name the answer and so on end
+268160	what's also included are the icons of
+271490	the application because a progressive
+273410	web application is an application which
+278480	is intended to look and feel like a
+283640	native app or like desktop application
+286760	so we need an app icon here so that if
+290360	you access the page for example on your
+293120	mobile device or your tablet you are
+296360	able to add to the application to your
+299690	home screen
+300350	and so that the icon for the application
+302570	is on your home screen and that you can
+304580	later on click on that item to go back
+306770	to the page again so we need as one part
+311000	of creating the web app manifest file we
+314270	need to add the items to the JSON
+317240	structure but first of all of course we
+319130	need the icons itself and we will meet
+324140	the icons in different sizes so that we
+327620	can provide the right sizes for any
+333200	platform the user is using and their
+338570	entity I can here for our sample
+340790	application we can use the file you can
+344720	see it here I've already opened up the
+346910	project structure here in my favorite
+349520	code editor which is atom inside the IMG
+353900	folder there is a file which is called
+357650	profile dot PNG and that is the arm the
+363700	image which is displayed here right on
+366340	the start page at the very top and we
+370310	will use that image and establish that
+373550	image as the app icon and to do that we
+376910	need to add it to the web app manifest
+379190	file we are going to create and of
+381620	course we need to disarm convert that
+384740	PNG file to different
+387570	and to do that we are using a web-based
+392700	service next so the service I'd like to
+398100	use is a Weibull at five icon -
+404130	generator dark
+406520	let's website here you can see it's
+410270	presenting a simple form which we need
+413430	to fill out first we need to select the
+415740	image here and we are selecting the
+418350	profile PNG image from our project here
+423000	then the first setting we can leave it
+429870	the option general items for web Android
+432240	Microsoft and iOS apps we would like to
+436020	maintain the image dimensions and I'd
+438960	like to deactivate the option include
+442530	your fav icon dot ICO in the public
+447470	general gallery that's not needed and
+451680	with that settings here I can then click
+455430	on the button create five icon and you
+458490	can see it directly takes me to the
+460620	result page where it can find a download
+464490	link here which contains some zip or
+468810	which is pointing to it zip file which
+471930	contains my my icons in the various
+479430	sizes I do need and what's also included
+483630	here in the download section is that
+491930	code excerpt here with some HTML
+495390	elements which I need to include in my
+498920	index dot HTML but first of all let's
+504030	download the zip file here ok like so so
+509550	now I have downloaded this zip file here
+512370	into my IMG folder of my project that's
+516840	the file and now I double-click on that
+518969	file to
+519719	extracted this one can be removed here
+523589	and the extracted folder here I'm
+527850	renaming that folder to let's say icons
+532790	okay like so I can see it here in my
+536639	project structure as well and here can
+539370	see it's now showing all the PNG files
+541769	which have been generated by faff icon
+544620	generator to dark and if I click on the
+547290	files you can see the different sizes
+551399	which are now available here so the next
+554220	thing we need to do is to include the
+556610	HTML text here from the result page in
+560220	our application so let's select that
+565009	HTML code here on the website copy it
+569639	and then I'm going to index the HTML
+574879	okay here we are
+576930	and within the head section I'm
+581930	including all those elements ok like so
+590120	and now you can see we are having link
+594059	elements here for our icons and we are
+598110	having a link element here for which is
+602790	of rel manifest and which is pointing to
+607170	a file which is called manifest dot JSON
+611180	and that file is a Weibull here and here
+616649	you can see that's already a web app
+619379	manifest file you can see here that are
+622800	adjacent content but so far it's
+626040	containing only the name property which
+629069	is set to tab and it's containing the
+632129	icons property which are set to an array
+634980	containing objects and each object
+638420	describing one of the icons we have
+643230	generated ok in on in the next step we
+648870	will further adapt that money
+651279	not J's and five-year we will use this
+654160	file as our web app manifest file but
+659220	beside having the icons included here we
+662199	do need some more properties here
+667360	describing our application in a total
+670269	and that is what we're going to edit the
+673269	next step before doing so we need to
+675519	adapt the path to our icons a little bit
+678879	a little bit first of all we're doing
+681720	the adaption here in index dot HTML you
+685809	can see it's always pointing to the PNG
+688749	file directly but we have decided to put
+692170	all that stuff into IMG into the IMG
+697470	icons folder so I need to adapt it here
+700749	and say I am G slash icons like so and
+707160	that is needed here for all the path
+711639	strings I have included here in my index
+717730	dot HTML file playing like so you can
+732490	see it so it's running and the next
+735699	thing we need to do - we need to adapt
+738009	the path strings here in the
+741120	manifest.json file as well I simply need
+745149	to remove the leading slash here to make
+748029	that pass relative because all those
+752649	files are in the same location and the
+755740	same folder like the manifest file
+757959	itself ok like so so next let's X down
+764019	to manifest the dot adjacent have a
+766209	little bit first we are going to change
+768160	the name here to my PW a test F
+777350	and then I'm adding a few more
+780800	properties first of all I'm adding a
+785420	property which is called short
+787430	underscore name and I'm assigning the
+792020	string pw8 test here then I'm adding a
+798620	property which is called length which
+802810	specifies the language of the
+805100	application in this case it's er - us
+809710	okay then I need to include a property
+815410	start underscore URL let's just a slash
+823940	it because we would like to set the
+828290	start is a root of URL of our
+830930	application as a star to RL next I'm
+835880	going to specify a background color with
+842360	background underscore color and I'm
+845240	assigning a string here with a
+846920	hexadecimal value which is 2 C 3 e 500k
+861310	next scene color which is 1/8 BC 9c I
+878290	think and next I'm setting a display
+884090	mode which is standalone okay end of
+892370	course the icons array here so that
+896420	everything we need to set up a basic
+899290	manifest.json file which
+904899	is delivering all the information we
+907149	need okay so we can do a quick check to
+910569	see if our manifest.json file is
+914279	interpreted correctly and does not
+917230	contain any errors here on the web site
+920879	in Chrome I can open up the chrome
+924189	development tools okay and here on the
+933779	let's close it here on the application
+939389	tab you can see you do have the menu
+942970	item manifest and clicking on manifest
+948730	gives you the following view here on the
+950980	right side you can see the location of
+955029	our manifest.json file here then you can
+958629	see the information we have entered name
+961209	short name start URL the colors the
+965019	display mode and so on so everything is
+968759	interpreted correctly and is available
+971290	here to our application if I scroll a
+973509	little bit down you can see on our icon
+976589	definitions included into JSON file and
+980769	it's displaying the icons in the
+984220	different sizes as you can see here so
+987699	the path information is correct all
+990639	icons are available and so if you know
+995730	if you now would put map with this
+998259	application at your mobile device it
+1001410	would read in the manifest and then
+1003420	request if you would like to add that
+1007459	progressive web application as an icon
+1010740	to you home screen so after having a
+1015929	completed our web app manifest file we
+1020040	need to add the second main building
+1021809	block of a progressive web application
+1023759	and that is a serviceworker so what is a
+1027149	serviceworker a serviceworker is a
+1029130	JavaScript file basically which is added
+1031589	to the project and registered in the
+1034829	browser
+1035250	all the serviceworker is clipped
+1037630	unable to run in the background and
+1042039	perform certain tasks so you do not need
+1045160	to have the webpage open in the browser
+1048339	once it has been requested and it has
+1051820	been open in the browser the Service
+1053710	Worker is installed and then it's
+1055390	running even if you close a web page and
+1057429	go to wizard other pages or even if you
+1061570	close the browser and so what are the
+1065590	typical tasks a service worker can
+1067990	perform so you can use a service worker
+1071020	for different tasks one task would be
+1073480	you can recognize the network state and
+1076539	display a special page if no network
+1078880	connection is available or for example
+1083440	you can add application pages or
+1088870	application data to you the browser
+1091480	cache when you are online and then when
+1094840	the service worker detects it no network
+1097360	connection is there you can implement
+1101289	the service worker to them fulfill the
+1103809	request from the cache so that the user
+1106150	sees an offline version of the page but
+1109690	no error page he sees actually the page
+1112210	record is has been stored in the cache
+1114640	before and now is available and can be
+1117039	delivered from the browser cache which
+1121179	is great another use case would be you
+1124690	can display push notifications to the
+1127179	user even if in cases when the user is
+1130750	not wizarding the website right now and
+1135179	delivering push notifications for
+1137380	example is it's very good tool because
+1142570	it brings the attention of users back to
+1146200	your website you can inform about
+1148360	special events about new articles new
+1151990	blog posts on your website and bring up
+1156299	notifications and then the user can
+1158289	click on the notification and it takes
+1162360	takes the user back to your website
+1166270	so you can see this worker is a concept
+1169809	which is very powerful and in the
+1172809	following we will see how to add a
+1174460	service worker to our web application
+1177190	here for the purpose to install a
+1182559	caching mechanism so that files are
+1186220	stored into the cache and then we will
+1190300	see we can close a network connection so
+1194740	that no connection to the server is
+1196210	there and see how our application is
+1198790	delivered in an offline version from the
+1201550	cache so let's get started so there are
+1205300	different ways of adding a service
+1207190	worker to our application of course you
+1209830	can start implementing the service
+1211960	worker from scratch to make it a little
+1215350	bit simpler we will use again a
+1217990	generator which is available here it PW
+1221679	a builder comm that's at the website and
+1225210	you can see if I could here on the
+1228070	second step of the generator both
+1230429	service worker it takes me to the
+1235450	following website here which says select
+1239020	the service worker functionality for you
+1241300	apt and I can now choose between
+1243300	different types of service worker
+1245830	functionality
+1247980	it starts with offline page then we have
+1251530	the offline copy of pages offline copy
+1254770	which back up offline page and so on so
+1258160	all those service workers have a
+1263559	different functionality a different
+1265330	caching strategy may be included and for
+1269980	example the first one here is at the
+1271540	easiest on offline page this sounds
+1274179	worker is simply checking the network
+1281080	connection and if there is no network
+1283420	connection it serves a special offline
+1286720	dot HTML page as you can see here which
+1289150	needs to be added of course to your
+1290920	application but the type of service work
+1294070	I'd like to add to our application
+1296240	the offline copy of Patriot Service
+1299090	Worker it stores a copy of each page
+1304520	into the browser cache at the moment the
+1308660	visitor is viewing that page and this
+1313280	allows as you can read here wizard to to
+1316610	load any previously viewed page while
+1319550	they are offline because those pages are
+1321950	available in our browser cache and so
+1323930	the cache is able to fulfill the request
+1327140	is there is no network connection so
+1329540	let's select that one and then you can
+1332150	see the generator is giving me the
+1334280	source code I do need and there are a
+1336590	two part of source code I needed to add
+1338990	to my website first of all I need to
+1342710	copy here the code for web site into a
+1346550	script element in index.html that is the
+1352100	code which is needed to register is a
+1355790	serviceworker for my application in the
+1358640	browser so it checks if there is already
+1360800	negative service work of former website
+1362930	if no it registered that serviceworker
+1367090	and the next in the next quote code
+1372380	sector the next source code section here
+1375710	is giving me the task code which is
+1378800	needed to implement the serviceworker
+1383500	itself and that source code will be
+1388210	inserted into a file which is called
+1392390	you can see it here because that is a
+1394070	file which is used for registering the
+1397340	serviceworker which is called PWA
+1399260	builder - SW dot j s so we need to
+1404330	create that file insert that source code
+1409430	here and add the code which is needed
+1411500	for registration into our index.html so
+1415520	let's start with the first part so here
+1419030	was an index.html let's scroll down and
+1422300	in
+1422990	another word a script section right here
+1434020	okay so let's include a command as well
+1441910	so that is a part where we are doing the
+1444800	service worker registration okay and we
+1454280	have a script element here we're setting
+1457280	the time to text slash yeah script okay
+1473300	and then I'm copying the script code
+1476240	here from the first section code for
+1479240	website so copy it here and paste it
+1483410	here okay
+1500889	so like so so let's quickly go through
+1506090	the code you can see it here it uses a
+1508279	navigator service worker dot controller
+1511299	object check if this controller is
+1515799	existing if this is the case it print
+1521090	out an error message because that is the
+1523100	indicator which shows that an active
+1525649	service worker is found for our website
+1528289	so we do not need to register another
+1532220	worker here is that's not the case it
+1534830	uses the navigator dot service worker
+1538190	dot registration method to pass at the
+1541909	first string parameter of your path over
+1544490	the file name which contains the year
+1546799	implementation of the server worker and
+1548870	then in the second parameter passing
+1550789	over and configuration object which in
+1554539	our case only contains the property
+1556460	scope which is set to route so to the
+1560510	root folder so this simply counts the
+1563269	service workers that it should control
+1565070	the entire application and if presid
+1568610	registration has been completed
+1570440	successfully it prints a message here to
+1573889	the console the same service worker has
+1576529	been registered for scope and then
+1579289	printing out this Cobra which has been
+1581659	set here so if I now check in my running
+1586610	application here in the browser the
+1588409	Ponzo you can see on getting back arrows
+1592190	and that's quite clear because the file
+1594649	which has been passed overview to the
+1598580	registry method PW a builder - tells W
+1603529	dot KS is not existing yet so on it
+1608059	gives me an error here so our next task
+1610850	is to create that file within my project
+1615590	so let's say new file and then the name
+1620659	is PW a
+1624510	builder - swas okay here we are and now
+1633750	I can go back to PW a builder calm and
+1637370	then take a copy the code from the
+1644730	section serviceworker code and in third
+1649470	that piece of code here into my new file
+1653990	okay let's save it okay so it's again
+1659820	quickly go through the code basically
+1663480	there are two sections in this code it's
+1666230	adding two event listeners first it's
+1669480	adding the install event listener and
+1671760	second it's adding here below the fetch
+1675000	event listener and what the service
+1677100	worker is doing is that it responds to
+1681030	the install event by executing this
+1685590	function here in the install event is
+1687780	called once the the index page is viewed
+1694980	for the first time and if that is the
+1699390	case you can see it's creating its
+1701669	opening up a new browser cache here and
+1705290	then inserting by calling cached output
+1710400	and asserting that index dot HTML file
+1714030	to the cache so after having executed
+1718200	this function the cache is created at
+1720809	the first page is inverted and then as a
+1724410	service worker is responding to the
+1726510	fetch event and the fetch event is
+1728580	called whenever the user tries to access
+1732150	a new resource for no application and
+1737820	the patch on event method or function is
+1743429	basically doing two things so first it
+1747840	defines an inner function here update
+1750120	cache and it's attaching the update
+1753419	cache
+1754010	a function call here was wait until to
+1756920	the event queue and as the name of this
+1759470	function already of suggest it updates
+1763580	the cache with the assets which have
+1766610	been requested here still every time the
+1769970	user is sending a request for maybe
+1772600	index.html or another outside here to
+1776510	the server update cache makes sure that
+1780140	the browser application cache is updated
+1783920	with the resources next you you can see
+1788630	here is with responds with attaching
+1795070	another thing to the queue here the
+1798740	service worker is making use of fetch
+1802840	catch to respond to an error situation
+1807740	so maybe if the network connection is
+1810380	not there if the server is not reachable
+1813310	the function which is passed into the
+1817160	catch a call here is activated and then
+1820790	what the service worker is doing here
+1823820	basically is to see if the requested
+1827330	resources are already within the
+1829400	application cache so it opens up the
+1831410	cache with the open method and then here
+1834950	was cache dot match checks if the
+1840350	resource is available from the cache and
+1844490	if that is the case the reason the
+1847040	response is generated with the s from
+1850580	the cache if not an error page is
+1855890	displayed and so that's basically how
+1858920	the offline functionality is implemented
+1863680	so now we can make sure that our service
+1867500	worker is working at the browser is
+1872180	expected and again the chrome developer
+1874970	tools are helping us with that task and
+1878930	in again we are here in the manifest
+1881300	view and you can see here's an item
+1886220	right below this is called serviceworker
+1889400	here from the left-side menu and you can
+1891410	select it and now you can see that the
+1893960	service worker here already is addictive
+1896240	and running and you can see that the PWA
+1899120	builder - SW dot gif file has been
+1905080	registered as our service worker here
+1907700	for our web application you can register
+1912560	the souls over here if you like and you
+1917540	can see here down in the cache section
+1921790	within cache start that the
+1924650	corresponding cache storage for our
+1927260	offline content has already been created
+1930170	and if I click on it you can see the
+1932180	first page with was added here it's
+1936200	index dot HTML and if I now perform
+1940700	another request here for the side and
+1944360	maybe select something here from the
+1946190	menu ok you can see that the content
+1956630	here in the cache is updated with all
+1960380	the assets which have been which have
+1963530	been part of a request and now I'm able
+1968390	to demonstrate well that my application
+1973850	is executed in offline mode so without
+1976790	any network connection and this is very
+1980420	simple to do so we just need to click
+1984860	here on the service workers of section
+1988160	again and then set the check box here at
+1993680	the option offline
+1995630	okay now the assets simulated that no
+2000460	network connection is Erica request the
+2004360	page once again and now you can see it's
+2007930	loaded again and here from the console
+2013330	you can see
+2015140	that the network connection of course is
+2019170	not there soon
+2021270	internet disconnected yes the arrow
+2024990	which is given here and then our service
+2029430	worker is taking over the task and it's
+2032430	saying servant content from cache and
+2036990	that is the message we are getting
+2041430	because we are working an offline mode
+2042950	so okay we can switch back of course
+2046440	into online mode and now you can see if
+2051120	I request it again now everything is
+2054629	loaded from the server in no internet
+2057629	connection error and all the assets all
+2061169	the pages all the images are are added
+2064710	again the new version is added to the
+2067350	cache so that is everything up to date
+2069510	with the latest website content so if
+2073710	you start developing progressive web
+2077399	apps is always kept - to have the
+2080700	opportunity to make a quick check and
+2083490	see if your application complies to all
+2087480	the progressive web app standards and
+2091980	rules and there is a tool from Google
+2094470	which makes it extremely easy and I'd
+2097290	like to show you White House and
+2101030	lighthouse can be found here at
+2104360	developers.google.com/plus web search
+2106620	towards fresh lighthouse and lighthouse
+2109850	is generating a report which gives you
+2114110	kpi's as indications of how good your
+2119550	progressive web app complies to rules
+2122700	and it generates a report with with
+2128880	action items that gives you the
+2132660	possibility to directly deal with the
+2137880	problems in your progressive web app and
+2140370	to solve those problems to get a higher
+2142560	rating and that house can be installed
+2145500	here as
+2147370	a Chrome and on I've already installed
+2152300	it you can see it here that the
+2154850	lighthouse icon here and if I would like
+2158000	to check now our application here I
+2160070	simply need to activate that tap here
+2163280	the application is already Weibull here
+2167000	and now I can click on that lighthouse
+2170230	button and advanced a general report and
+2176510	now it takes a few seconds
+2178340	the lighthouse is checking the website
+2180790	checking all the PWA routes and then
+2185570	generating a report
+2197880	so here we are as you can see that as a
+2201100	result here you can see the KPI is
+2205120	giving you information about the
+2210940	progressive web app itself so we have a
+2213430	rating of 82 which is which is good
+2216570	performance it's not so good of course
+2218860	we are running a server here on on
+2220900	localhost accessibility is quite good
+2224440	and best practices although with a
+2227020	rating of 92% quite good and we have
+2231070	here from the audit advanced we failed
+2233320	audit so we can now work on for example
+2236220	it says that we need to serve our PWA
+2241830	with HTTPS of course if we are working
+2246910	in a productive environment it says that
+2249820	we need although an icon in the size of
+2255450	512 pixels and it gives me all the
+2260230	information that I have to remove here
+2265870	is a property a shrink to fit which is
+2268930	set to know from the meta viewport
+2272040	element okay so this was passing again
+2277510	from coding the smart way I hope that
+2280810	you enjoyed my video if you do like my
+2284440	tutorials please subscribe to my channel
+2287530	on youtube please also don't forget to
+2290410	visit my blog at coding the smart way
+2292450	comm and I hope very much to see you in
+2294970	the next video thanks and bye
+2304200	[Music]
