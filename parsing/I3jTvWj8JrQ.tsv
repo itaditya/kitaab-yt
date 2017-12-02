@@ -1,0 +1,1017 @@
+1070	welcome to this video where I want to
+3449	build a basic progressive web app with
+5790	you now I already do have a video about
+8429	progressive web apps on my channel you
+10289	can find a link in the video description
+11639	of course and this our video it's
+14400	basically taken from my complete
+16020	progressive web of course I host an
+17789	udemy of course you can also find a link
+19980	to Disney video description now in this
+22320	video here I want to build a progressive
+24779	weather with you which works offline and
+27240	which we can install on the device home
+29789	screen of an Android device so let's do
+32700	that let's dive into that and let's
+34680	learn what it takes to create a basic
+36600	progressive web app
+40750	so in the video description you can find
+43660	a link to a starting project which I
+45760	already opened in webstorm it's a very
+48490	basic project and as you can see in the
+50530	readme of that file you'll need no js'
+52750	to run this development server this
+55240	project uses and you'll also need to
+57610	install the dependencies though their
+59770	dependency is really just as one
+61360	dependency here at HTTP server and then
+64750	we have to start command which spins up
+66670	the HTTP server so let's do that let's
+68770	first of run an NPM install to install
+71260	that server and once we did this we can
+73840	start it with NPM start and of course
+76090	keep that process running because we
+77770	want to keep our development server
+79090	running you'll then find the addresses
+81400	under which you can visit the project in
+83229	the console but you can also simply
+85390	wizard localhost 8080 1 now this page is
+90369	a very simple web application it's not a
+92770	progressive web app at all and all we
+94810	can do right now is we have this huge
+96460	card here which you can click and when
+98800	we click it then the text down here
+100630	changes with a little animation and we
+102580	can go back and forth between the
+104110	different content so obviously the
+106720	application here might not blow your
+108640	minds but the cool thing is that it's a
+111070	nice application where we can add
+112960	progressive features or features of
+114880	progressive web apps to make it a
+116979	progressive web app I strongly recommend
+119110	checking out that other video I
+120640	mentioned which I took from my complete
+122320	guide to get you into the basics of
+125080	progressive weather app so that you
+126220	learn why you might want to build them
+127900	and what makes a progressive web apps
+129820	now with that let's turn this
+132250	application into a progressive web app
+134230	by first of all adding a manifest file a
+138030	manifest file is a file which is read by
+141370	the browser's by browsers supporting it
+143709	at least and this file then allows the
+146920	browser to get some extra information
+148690	about your page something like the icon
+151330	it should use or for example the name
+153959	description of the page things like
+156370	these which allow the browser to display
+158590	your page correctly and very important
+161560	to install it on the home screen with
+164140	your own icon and so on so that's the
+167230	idea behind the manifest file in general
+170500	though we need to understand which
+172209	browsers do some
+173620	word which progressive web app features
+175750	let's have a look at that on the web app
+178510	manifest page of the Mozilla developer
+180519	Network you can not only find some
+183010	information about how this file should
+184659	be structured and which properties you
+186340	can add I strongly recommend this
+188019	article but of course I will also walk
+189730	you through the most important
+190900	properties in this video but you can
+192940	also found if you scroll down you can
+195069	also find some information about the
+197739	browser support now what you see here
+200110	browser compatibility that it's not
+202510	supported at all that's not entirely
+204459	true many features like installing it on
+207340	the home screen simply doesn't work on
+208989	desktop like that but if you check out
+211090	mobile that's the more interesting part
+212980	because that is what we want to add our
+215019	application to the device screen and
+216970	there you see how it gets how it is
+219849	supported and support is pretty well on
+221890	Android now iOS Safari the support is
+225760	not there yet but Safari is also working
+229390	on progressive web as we see some
+231190	development there so chances are that
+233140	this file will also be readable by
+235420	Safari on iOS or other browsers on iOS
+238780	in the future so for now let's focus on
+241239	Chrome for Android and all the other
+243250	Android browsers and then we see it's
+245260	pretty good so this is the web app
+247870	manifest and to use such a file we
+250599	should add it to our project now the
+252970	application is actually served from the
+255250	public folder this is where all the
+257049	source code of the web app you saw lives
+259150	now if we have a look at it the river
+261660	index.html file and then we have our
+264070	source folder with the different asset
+266440	scripts images and so on now important
+269260	here I only got one HTML file I'm not
+272440	creating a single page application ship
+274240	though well it is only a single page so
+276250	I guess technically it is one but I'm at
+278710	least not using any framework I'm not
+280389	using angular react or view here if you
+283120	check out my JavaScript file it's a very
+285490	simple file using vanilla JavaScript and
+287860	this is important you can turn a single
+290710	page application driven by react angular
+293260	and so on into a progressive web app you
+296440	can also turn any other application into
+298990	a progressive weather also multi page
+301659	applications and the course I mentioned
+303849	at the beginning my udemy course
+305349	actually uses a mult
+306930	Paige application to show you how
+308789	versatile this concept is and that you
+310770	can apply to any web app that's really
+312990	important to me that you understand this
+314970	any web app so back to that manifesto
+318449	chase have folded the right place to add
+321000	it is right next or index.html file so
+323789	there I'll create a new file and I'll
+325500	name it manifest Jason it has to be
+328710	adjacent file now with that added
+331590	without any content in it yet I'll go to
+334380	the index.html file and there at the end
+337680	of the head section I'll now add a new
+339930	link it won't be of type stylesheet
+343050	though instead it should be relating to
+345539	a manifest and the link should simply
+348660	point to slash many faster Jason so to
+351509	this manifest file once you did this we
+355020	can start filling this file with life
+356880	and since it's a JSON file we should of
+359520	course write jason code in there so what
+362849	goes into such a manifesto Jason fall
+365370	first of all you can give your
+367259	application a name like a basic
+370080	progressive web app whatever you want
+373020	this name will be used in some places
+375300	for example on the splash screen which
+378150	Android will automatically show you if
+380250	you start your application after you
+383010	installed it on the home screen however
+385770	there are all the places like below the
+387780	icon where this name is simply too long
+389849	that's why there's also a short name
+392460	property and this showed us the name
+394620	indicate be a short name like basic PWA
+398159	this will be used below the icon on your
+400620	home screen and to make sure it's not
+402479	getting cut off you should pick a short
+404340	while string a short text here now
+407669	beside that we also have a start URL
+410820	because all lowercase by the way because
+414300	if you think about your app being added
+417300	to the home screen and the important
+419310	part about this installation thing which
+421169	I'll later show you is of course that
+423479	all the time when I say install it's
+425820	still a web app it's not a native
+429150	Android app you're running then it is a
+431520	web app in its core it's going to wizard
+433770	your web page which gets served from
+435330	your servers so this is why we have to
+437639	specify a start URL here
+440310	you could just say dot to simply use
+442410	this folder where the manifesto Jason
+444930	for lies in as a start URL which makes
+447510	sense for me here because that's the
+448860	public folder and that is our route web
+450750	folder but you could of course also say
+452970	slash index.html or whatever it is so
+456150	I'll go back to dot though because I
+457980	simply want to serve my root folder
+459690	whenever the user taps this icon on the
+462240	home screen now there's also another
+464970	important property that's the display
+466920	property here we can control how our
+469620	progressive web app runs in the end if
+472320	we open it if we open it from the home
+474210	screen I mean does it should look like
+476400	it's running the browser with the
+478020	browser toolbar at the top or does it
+480540	look like a real native app still again
+483600	it will always be a web app but we can
+485880	change the way it looks and to really
+487830	create an immersive feeling we might
+490740	want to pick standalone here our
+493320	alternatives would be fullscreen or
+497930	browser so here I'll pick standalone to
+501300	really make it look like a standalone
+503480	application and therefore reassembling
+506460	this native app look we also have
+510270	orientation now orientation allows us to
+513720	control how the user should view our
+516090	application now we can't rely on the
+518490	browser and forcing this actually or the
+521490	device but here we could say portrait to
+524550	make sure that this app can only be
+526140	viewed in portrait mode if started from
+528600	the home screen so I'll add this here
+531060	too and now the nice thing is the
+534030	background color and this is again all
+536760	lowercase here the background colors for
+540060	example used on the splash screen which
+542310	is created automatically which will be
+544590	the background color and your app icon
+546780	now I'll come back to the icon thing but
+549330	that is for example reset the background
+551190	color
+551550	what the background color here is not
+553740	it's the background color of your
+555690	general page so it's not this white
+558150	background here this is not controlled
+560160	for the manifest and I'm really talking
+562080	about the background during startup of
+564180	the application for example so here why
+566880	don't we pick some greyish color we also
+570150	have a theme color and the theme color
+573870	now for example Styles the toolbar
+575790	already when your application runs in
+578190	the browser the browser toolbar color
+580170	should change but also especially if we
+583650	started our app through tapping the icon
+585870	and then for example we open the tasks
+588240	which are on our mobile device we will
+590550	see that our application runs as a
+592170	separate task colored in our theme color
+594870	so that is where we can see that now you
+597779	can pick any color I'll simply pick a
+600120	color from this image here so maybe this
+603210	blue here which is the following hex
+606450	code 5f AAA e5 and that again will be
+611970	used in some places for example the task
+614370	switcher now with that we can go to
+618029	another important part the icons and
+620910	this is I cans not I can and I can say
+624779	is an array because you can specify
+626520	multiple icons in different sizes
+628500	basically each icon is defined as a
+631200	JavaScript object here in this JSON file
+633540	and then has free properties the source
+636420	pointing to the I can file now in this
+639480	project you are using you already will
+641430	find this images folder and in there
+643529	this icons folder where I prepared some
+645630	icons for you and here we can simply
+647730	point to them so we can say source
+650540	images icons and then for example app I
+653970	can - 96 by 96 dot PNG that is the path
+659820	to the I can I wanna use we also have to
+663000	explicitly set these sizes of that icon
+665339	because we can probably guess that it's
+667770	96 by 96 but of course we could have
+670410	named this file anything we want so we
+672480	clearly have to tell the browser what
+674100	the size of that icon is and here it's
+676500	96 by 96 and this is how we should
+678900	specify this format this value here now
+681660	why do we need to tell the browser the
+683520	size of the icon because the browser
+685770	should pick the right icon for the
+687870	different devices where this application
+689730	might run on and depending on the
+691589	density of the screen and the resolution
+693360	of the screen of the device it should
+694920	pick a well-fitting icon the last
+697830	property for each icon is the type and
+700350	here this is image PNG and it should be
+703829	a PNG image if you want to use it
+706819	as a home screen icon as a splash screen
+708379	icon theoretically other formats are
+711350	supported to hurt you but to have an
+713089	installable application where chrome
+715879	actively prompts the user whether he
+718339	wants to install it add a to the home
+720439	screen or not you should set this at
+722749	least this is the case right now
+724429	now this is one icon but we got more I
+726739	can store it so I'll specify them all
+729289	the next one we'll check ft dimensions
+732410	144 by 144 and this is actually an icon
+736639	which you should always provide this
+738049	dimension 144 by 144 this is an icon
+741649	which is required so that chrome shows
+744889	this do you want to install this app
+747169	pop-up to the user basically 144 by 144
+750769	has to be provided if you don't provide
+753199	any other icons provide this size so the
+756379	next icon I want to add here is of
+759829	course the the next I can - that folder
+762859	so 2 5 6 by 2 5 6 and then let's add the
+766129	last icon this last I can here is pretty
+768829	important for the splash screen display
+771229	though it will work without it
+773209	now this is a basic app manifest a basic
+777679	manifest adjacent fall now with that
+779959	let's save all of that and let's go back
+782179	to this application let's reload it and
+784579	let's open the developer tools now I'm
+786829	using Chrome here and I strongly
+788389	recommend using Chrome because they have
+790579	awesome developer tools when it comes to
+792829	debugging or working with progressive
+794720	web apps there you can visit the
+796699	application tab and let me increase this
+801019	so there you can visit the application
+802669	tab and there you'll find this manifest
+805399	area if you click on it you should see
+808429	the information the browser could get
+810259	from the manifest you specified so the
+813439	name the short name the color and all
+815989	the icons you specified here so that's
+818299	awesome this seems all to work fine now
+821689	we could already manually add it to the
+823669	home screen we could go to a mobile
+825829	device an Android device simply open
+828379	this application if it were to run on a
+830299	server and then tap deep Add to Home
+832759	screen I can manually D add to
+835039	homescreen menu option we should then
+837949	already use this icon ansan but
+840180	Jerome won't actively prompt us to do
+842490	that to install it however there are
+845339	some criteria and a link to the criteria
+847920	can be found in the video description
+849260	which to find when Chrome will show you
+852360	this actively so when it actively asks
+855420	the user whether he wants to add the
+857550	page the user is currently on QT a home
+859800	screen or not now right now when I
+862050	record this video the criteria are that
+864320	you have a manifesto JSON file with 144
+868529	by 144 PNG icon that you of course
+872339	should specify a name and so on short
+874860	name and that you also have a
+877410	serviceworker
+878160	we don't have dead yet that you also
+881480	visited the page with a five-minute
+884820	pause in between budget that you came
+886620	back basically because you probably
+888420	liked the page and that's important that
+891420	your page has served over HTTP now
+894240	during development localhost is actually
+896670	an exception but you should serve it
+899700	over HTTP because service workers
+901500	require HTTPS and service workers are a
+904110	requirement for the app manifest again
+906950	localhost is the single exception that
+910350	exists where you can also serve your
+912120	progressive web app over localhost and
+914190	see all the features of course that's
+915930	not available when serving it on a real
+917910	server so there make sure you're serving
+920370	your page over HTTPS so what did we get
+923820	the manifest let's now add a service
+926310	worker and for that I'll add a
+929070	JavaScript file because a service worker
+931080	is just using javascript you could be
+933900	inclined to add it in the JavaScript
+935730	folder in the source folder but here's
+938190	an important thing a service worker
+940170	always has a scope scope defines which
+943470	pages a service worker can control
+945750	because a service worker is JavaScript
+948750	but not like your normal JavaScript like
+951660	here in the app dot J's file a service
+954000	worker isn't attached to a single page a
+956339	single file this app dot J's file is it
+959490	gets loaded by the index.html file here
+961950	at the bottom and it is attached to this
+964440	fall this is the reason why in app dot
+966990	ajs we can access the Dom off this
+969420	index.html file now a service worker is
+972959	also rich
+974579	through your pages but I'm deliberately
+976649	saying page s because you could add it
+978839	on any page but then it runs in the
+982170	background on a separate fret so not on
+985170	your main UI thread like this script
+987389	file runs but on a separate fret this
+990480	also means that for example on Android
+993180	it will keep on running even if your
+995399	page is closed which is amazing for
+997790	getting push messages for example
+999810	something I do show in my udemy course
+1001959	so this is a serviceworker it runs on a
+1004790	separate fret it's not connected to a
+1007579	single page but instead it has a scope
+1010100	which could be your entire domain all
+1012110	the pages on the domain or a subset if
+1015019	you limit the scope to a given folder in
+1017509	your domain on your web page here so to
+1020209	say and that's the important thing if I
+1022790	were to add my serviceworker in this
+1024500	javascript file the serviceworker could
+1027409	only interact with pages stored in the
+1031280	javascript file or in sub pages that of
+1034939	course isn't helpful because we haven't
+1036230	any pages in there so we should create
+1038329	the serviceworker on the public folder
+1040010	here so I'll create a new file and you
+1042650	can name this file whatever you want
+1044449	I'll name it s wjs this is a file which
+1049070	will hold my serviceworker related
+1051140	javascript code and again it's not
+1053390	attached to a single page it is
+1055549	event-driven and it can list is to
+1057710	events fired by any of your pages or
+1060409	other events not even coming from your
+1062539	pages like incoming push notifications
+1064909	now here I want Q react to some events
+1070250	triggered by my index.html fault though
+1072830	and first of all we should register this
+1076370	serviceworker this is done in JavaScript
+1079460	and of course in your normal JavaScript
+1081620	because you have to tell the browser hey
+1084049	here's a serviceworker related to my
+1086870	page or a subset of my pages please
+1089539	register it and if the browser doesn't
+1092000	notice serviceworker yet or the
+1094760	serviceworker file changed so if the
+1096530	file size changed the browser will take
+1099260	the serviceworker
+1100130	and register it override the old one or
+1103309	register it as a new one to code to
+1106580	register a service program
+1107900	therefore as I said has to be added in
+1109580	the app dot JS file or directly in a
+1112430	script part in the index.html file and
+1114950	in there
+1116120	I'll now simply add navigator that
+1119840	refers to the browser Service Worker dot
+1123980	register now here's an important thing
+1126559	you should make sure that this code
+1128420	where you register a serviceworker gets
+1130640	executed on every page in your
+1132980	application so that the user if he
+1136160	Wizards a different page and not your
+1137840	main page if you had multiple ones so
+1140690	that even if the user wizard at some
+1142250	other page like slash about that he
+1144650	still installs the serviceworker and
+1146450	then again you have one serviceworker
+1148160	for all the pages so it's always the
+1150170	same one you register but the user might
+1152360	enter a different place a different path
+1154309	in your app so you should be prepared
+1155960	for this back to the registration code
+1159140	there you pass an argument to register
+1162110	and that simply skip off to the
+1163970	serviceworker file so in this case it's
+1166370	/s wjs pointing to the root folder and
+1170000	then s wjs this is the serviceworker i
+1172760	want to register now we have one issue
+1175190	here though this code will work phone
+1177650	will work fine on Chrome on the latest
+1179960	version however what if the user uses a
+1182990	browser which doesn't support service
+1184880	workers we can check serviceworker
+1187250	support on his serviceworker ready this
+1190190	is a page on check our cobalt github do
+1192650	link can be found in the video
+1194240	description and on this page you see the
+1196730	different serviceworker features and
+1198380	which browsers supported or are working
+1201020	on it and you see that Chrome and
+1203030	Firefox support is decent but that
+1205040	Safari and AD are working on
+1207080	serviceworker features the general
+1210950	features or some special features so if
+1213350	the user uses Safari or edge right now
+1216190	the code we wrote here this one will
+1219800	throw an error because the browser can't
+1222410	handle this
+1223370	there is no serviceworker object on the
+1225380	browser so what we should do is we
+1227420	should wrap this into AF check where we
+1229640	say if service worker in navigator so if
+1235010	this object exists in the navigator then
+1237830	we want to execute this code otherwise
+1239780	we won't register a service worker
+1242029	that of course means we don't have
+1243529	access to the features we are about to
+1245359	add but that doesn't matter because the
+1247519	browser doesn't support it anyways so
+1250249	with that we were just sir to Service
+1251899	Worker now we can fill the service
+1254119	worker with some life let's go to the
+1256700	service worker and I said that the
+1258679	service worker is event driven you
+1260929	always react to events in there so what
+1263960	you can do is you can add an event
+1265369	listener you add it on self this refers
+1268969	to the service worker process so to say
+1271009	and then you call add event listener and
+1273649	now there is no click event or something
+1276440	like that because we're not reacting to
+1278479	Dom events here because the service
+1280190	worker is decoupled from the Dom you
+1282349	can't access the Dom in a service worker
+1284229	but there are other events or events
+1286580	available for example the install event
+1289460	this will be fired when a service worker
+1291769	is you guessed it installed which is the
+1294379	case as I mentioned if it's brand-new or
+1296659	if it's an updated version and the
+1298759	browser replaces the existing one for
+1301129	the given scope for the given domain in
+1302989	this case so if the install event fires
+1305960	then I want to execute a function here
+1308509	and in this function of first of all
+1311269	simply log service worker installed this
+1315469	is something I can do here
+1316729	now we'll soon add more code to the
+1318679	install event though let's also listen
+1321619	to the activate event here now in the
+1324830	activate event we know that it has been
+1327649	activated and the difference between
+1329559	installing and activating is that
+1332019	installation happens instantly if the
+1334580	browser detects a new service worker but
+1336859	it will keep it waiting until it
+1338719	activates until you or the user using
+1341450	your page closed all tabs in his browser
+1344269	where your page was open the reason for
+1346999	it is is simple if you install a new
+1348950	service worker and you overwrite the old
+1350839	one if you would immediately activate
+1353059	and replace the old one then you might
+1355700	break the air page the user is currently
+1357589	visiting because maybe your page is
+1359330	firing somebody went to which the
+1361009	service worker should react and you
+1362899	suddenly push a new version onto this
+1365839	page now existing processes might get
+1368539	interrupted the page might not work
+1370369	anymore that is why we have two separate
+1372349	steps here
+1373730	it will only activate after user closed
+1376280	all tabs and then open it again then the
+1379400	installed service worker will get
+1381290	activated so these are two events we can
+1383960	see here now let me also go back to the
+1386540	app dot JS file and chain something to
+1389240	the registration the register method
+1391580	returns a promise and therefore here I
+1394310	can execute a function where I can
+1396830	simply log service worker registered now
+1401570	with all that added let's see this in
+1404210	action so the server is still running
+1406640	I'll go back to my application here and
+1409610	I'll reload it now if you go to service
+1412700	workers here you should see that a
+1414710	service worker was registered and this
+1417290	is the scope of your service worker this
+1419360	domain here's the service worker file
+1421880	you see it's activated and it is running
+1423680	and this is your first service worker
+1426950	added now the service worker like this
+1430430	doesn't do too much though you typically
+1433460	the most basic use that you can do you
+1435380	typically use it for caching caching
+1438170	means that you can actively add some
+1440540	files to your cache a special cache not
+1443480	the default browser cache and you can
+1446120	also define when these assets should be
+1448160	served so that you make sure that your
+1450890	page even works if you're offline let's
+1454130	add such a functionality in the service
+1455870	worker and the best place to catch some
+1458720	files which you know will not change
+1460760	that often you always want to be able to
+1462470	access them is in the installed step
+1464600	here because there you can pre cache the
+1467660	static assets off your page you do this
+1470780	by simply reaching out to the cache API
+1474710	a special web API which allows you to
+1477470	access this special cache I was talking
+1479570	about not the default browser cache but
+1481700	a cache you can manage you can use
+1484010	caches open to open a cache there next
+1488300	you pass a name and this could be static
+1491240	or whatever you like if it doesn't exist
+1493580	yet like it does for the first time you
+1495950	execute this it will simply create it
+1497660	and thereafter it will open this cache
+1499810	caches open returns a promise and in the
+1503120	function which gets executed once the
+1505040	promise resolves we get access to the
+1507380	opened cache so let's pass this as an
+1509630	argument now in this open cache we can
+1512720	call the add method to now add an asset
+1516380	for caching now the add method is pretty
+1518870	cool we can simply add a path to an
+1521990	asset here and the browser will
+1523940	automatically make an HTTP request to
+1526310	the browser and store the incoming
+1528560	response in the cache it will actually
+1530840	store a key value pair in the cache
+1532970	where the key is your request and the
+1535640	response is well excuse me and the value
+1537800	is the response you got back so here we
+1540410	can simply specify a path like for
+1542990	example let's say we want to cache the
+1544910	app.js file so we could cache source J s
+1549320	AB dot J s we also might want to just
+1553760	cache slash so that if we wizard just
+1556190	localhost:8080 1 nothing else we have
+1559250	this response cached we should also
+1561560	cache slash index.html because that's
+1563870	not the same as just slash both load the
+1566630	same file and yet but is these are
+1568550	different requests to different
+1570170	endpoints now with that we would already
+1573530	cache quite some files we wouldn't cache
+1576140	any images and CSS and so on though and
+1578630	you can see that you're calling cache
+1580490	add a lot now that's fine but I'll
+1582980	comment it out there is another function
+1585110	which is cache at all cash add all takes
+1588770	an array of strings and simply does all
+1590750	these individual additions automatically
+1593300	in one turn so here again you can now
+1596150	cache slash slash index.html so this is
+1600110	just an area of strings as I said source
+1602450	JSF J's and what else we have
+1605060	like for example source CSS and in there
+1609920	we have the app CSS file now we also
+1613550	might want to store an image so here we
+1615800	could now store source image as PW a dot
+1620930	JPEG you could also store the icons here
+1623650	now I will store something else though
+1626540	if we have a look at the index.html file
+1628900	there you will see that we're also
+1631700	reaching out to a CDN to fetch this font
+1634240	so what I'll do is I'll also try to
+1637310	catch this so I'll copy this URL you can
+1640909	cash assets from Abra service - it's not
+1643340	just from your server you can enter any
+1645970	URL into the cache add method so I'll
+1649549	reach out to this CDN here by simply
+1652519	adding this URL here queue and keep in
+1655519	mind these are all just you are else
+1657619	these are relative URLs on your own
+1660169	server and this is a URL reaching out to
+1663739	an average server in the end the browser
+1665840	will make these requests and store the
+1668029	response for you
+1669489	this code won't work though service
+1673249	workers are only idle working for an
+1677450	unknown period of time and then they
+1679669	will shut down to make sure that the
+1681859	service worker doesn't shut down before
+1683419	cashing is done we can take advantage of
+1686029	the event which we get passed into this
+1687799	function for the installation event
+1690200	automatically this event has a wait
+1694099	until method and we should execute this
+1697249	to make sure that this recruit waits for
+1699259	a certain process to finish before it
+1701509	possibly shuts down and shutting down
+1703789	doesn't mean instead it's just passed so
+1706220	to say and it will wake up the next time
+1708320	it receives an event now we can take
+1711200	cache open which returns a promise and
+1713809	pass it to wait until wait until
+1716509	conveniently expects to get a promise so
+1718729	this is just fine now with that it will
+1721789	wait for this process here to finish
+1724009	before it possibly goes into idle mode
+1726499	again now let's try this out let's save
+1729499	this keep in mind we now change the
+1731869	serviceworker file so the fault size
+1733879	changed so the browser should install
+1735889	the new one the next time we refresh the
+1738320	page so let's do that let's refresh the
+1740509	page and there you now see if you go to
+1743659	applications service workers then we get
+1746509	a new service worker waiting to activate
+1748940	in the console we therefore see that it
+1751580	was registered that it was installed but
+1754580	that it wasn't activated yet to activate
+1757580	it we have to close this page and reopen
+1761239	it close all active tabs with the page
+1764269	and the next time you visit your
+1765830	developer tools
+1766729	you see it's activated and running
+1768379	you'll also see also under application
+1771589	if you go to cache storage
+1773270	and right-click it to refresh you'll see
+1776060	there is a static cashier this static
+1779630	cash actually cashed all the requests
+1782780	you specified in your service worker you
+1785630	also see the response here and the date
+1787910	and time when twas cashed now with that
+1790490	we haven't gotten offline support yet
+1792740	though all these things are cached but
+1795110	we never try to fetch them so what we
+1797810	can do is we can add a new event
+1799310	listener to this service worker and this
+1802250	is for the fetch event now the fetch
+1804410	event is for example triggered whenever
+1806690	you fetch something in the index.html
+1808280	file like through this link or fruit
+1810800	desolating to the apt osseous follow or
+1813020	through this line link pointing to the
+1814760	script file whenever this is the case a
+1817250	fetch event is registered in the service
+1820070	worker now for the fetch event we can
+1823760	now react with a function where we also
+1826070	get an event as an argument and now
+1828440	there we can decide what we want to do
+1830870	if we don't do anything the default will
+1833180	happen the browser will go ahead reach
+1835370	out to the network and make that request
+1837500	but we can change that behavior we can
+1840410	basically use our service worker like a
+1842930	network proxy here we can use event and
+1847160	now not wait until but respond with to
+1850820	make sure we respond with something
+1852440	different than the default Network
+1854120	request now here we could respond with
+1857390	our own fetch request to some other URL
+1860120	or we simply reach out to their cache
+1862430	and try to find the given network data
+1866090	from that cache get it from the cache
+1868960	the data we wanted to get I mean we can
+1872510	do this with the caches API again and
+1874490	there we have a match method this allows
+1877790	us to match the incoming requests with
+1880490	some resource in our in our cache so we
+1885440	should simply pass event requests there
+1887810	is a request up a request object on an
+1890060	event object and now the cache API will
+1893420	have a look if in any of its caches in
+1895760	this case we only have one but it could
+1897470	have multiple ones if in any of the
+1899480	caches it finds this request and for
+1902870	some assets it should indeed do that if
+1906440	that's the case or actually always it
+1909710	will then execute a function where we
+1912379	get their response from the cash from
+1915110	the cash not from the network back now
+1918200	this will also be executed if it doesn't
+1921440	find something in the cache so it will
+1923179	not fail it will not throw an error
+1924649	response will then just be null if
+1927940	response is set though we can simply
+1931309	return the response so we return the
+1933440	response from the cache if we have it in
+1935299	there else
+1937070	we can simply do something well else we
+1940100	can reach out to the network so we can
+1941840	then make the fetch with the fetch API
+1944289	this is supported by all more modern
+1947059	browsers and since we're in a
+1948919	serviceworker which only runs on modern
+1950870	browsers we can safely access this so
+1953509	fetch is now available and fetch will
+1955970	now make a network request to event
+1959029	request for example and there we can
+1961700	then simply return fetch which is of
+1963590	course a promise but we can return a
+1967039	promise or directly response both will
+1970129	work here in caches match and this code
+1972649	should make sure that if we have the
+1974929	request in the cache we get the response
+1977210	from the cache if we don't find it in
+1979850	there we go ahead and make that Network
+1981980	request let's see if that works
+1984440	let's save this and let's reload the app
+1986809	to install the new serviceworker now as
+1989419	before it's waiting to activate so let's
+1991639	simply close that tap and reopen it and
+1994399	let's have a look it was activated now
+1997700	let's see if this works if I reload this
+1999799	all works but now under a serviceworker
+2001870	here an application
+2003340	let's go offline and let's reload the
+2005559	app again and even though I'm offline
+2008950	I am offline this is simulating that I'm
+2011139	offline the app looks like before and
+2013629	it's the works like before I can still
+2015399	tap this the reason for it is this and
+2018009	we can confirm this if we have a look at
+2019779	the network tab that we're getting these
+2022179	assets from the serviceworker here you
+2024340	see that from the serviceworker we're
+2026379	fetching it from there that's of course
+2028419	the cool thing because now we got an
+2030639	offline ready application with a
+2033309	serviceworker
+2034179	now you can find whom this whole caching
+2037690	and get something from the cache thing
+2040550	way more there are different strategies
+2042290	you can use to get something from the
+2044570	cache first but then reach out to the
+2046310	network to get a more up-to-date version
+2048110	of that asset but to go to the cache
+2050780	first to show something on the screen
+2052190	immediately and so on and I will walk
+2054740	through all these strategies in my udemy
+2057200	course which I mentioned at the
+2058490	beginning linked in the video
+2059720	description this basic caching here the
+2062720	spree caching we're doing here
+2064310	already is a huge first step though now
+2067520	with that let's see how that looks like
+2069200	on a real device it should actually all
+2072920	work on an Android emulator for example
+2075620	a one you create through the Android
+2077900	studio so feel free to do that if you
+2079880	don't have a real Android device I'll
+2082100	quickly connect my real device with my
+2084350	computer though and then I'll try to see
+2086990	this run on the device and see how the
+2089570	application looks there now I connected
+2092179	my real Android phone with my Mac here
+2094850	and the cool thing is on Chrome which
+2097520	you have Chrome on your Android device
+2099050	again should also work on an emulator
+2101330	and you have Chrome on your Mac and
+2104420	somewhere on your Windows machine - as
+2106550	your default browser you can go to the
+2109610	developer tools on Chrome for desktop
+2111400	these free dots you see in the top right
+2113870	corner and then more tools and then
+2116150	remote devices now if you expand this
+2119630	here this a simple window you actually
+2122540	see all connected Android devices now
+2125690	there you should also make sure that you
+2127160	check port forwarding so that you can
+2129800	visit a port which a server I should say
+2133550	running on your local machine on your
+2135410	desktop machine here also from your
+2137510	mobile device because by default if you
+2139490	enter localhost 8080 one on your real
+2142250	mobile device or the emulator this will
+2145280	not be your page on your machine here
+2148670	this will be localhost on the device
+2151460	which is the device itself but with port
+2153920	forwarding you can make sure that you
+2155630	could enter localhost 8080 1 on your
+2157460	device and wizard the server running on
+2159920	your Mac or Windows machine so with that
+2163130	let's now simply go to that connect
+2166670	device my oneplus here and there I now
+2170000	will simply open a new tab so let me
+2173120	quickly do that
+2174290	so now here in Chrome for my desktop
+2177410	machine I can inspect this tap I opened
+2181160	and I now got the same developer tools I
+2183950	have on my Mac Chrome here on my Mac
+2188000	still this window is running on the Mac
+2189950	but it's referring to the page running
+2192320	on my mobile device which I can show by
+2195080	tapping here and so on
+2196460	and you see I already get this
+2198650	installation banner here you can also
+2201770	manually trigger it by going to manifest
+2204170	and then clicking add to homescreen any
+2206660	developer tools connected to your device
+2208869	now I'll click Add here and now it's
+2211820	again well as I just said adding it to
+2213859	my home screen we now have a look at
+2216350	that here it is quite a bit here it
+2220670	opens and this is now opened through the
+2223490	icon on the home screen now right now at
+2226040	the point of time I'm recording this
+2227810	this is a bit buggy at least for a
+2230240	localhost
+2230900	testing there you see it still looks
+2233840	like it's running on the browser even
+2235430	though I opened it from this icon and I
+2238520	promised you that it would look like as
+2240230	like a standalone app at least since we
+2242210	displayed a set display to stand alone
+2245150	in the manifest now on localhost we get
+2248210	this back we don't get it if we surf
+2250490	this from HTTP though so why don't we
+2253730	quickly do that as an extra bonus task
+2256550	to make sure to really shift us to a
+2258830	real page so we can see how it would
+2261710	work if we were to serve it from HTTPS
+2265010	now you can upload it to any of your
+2267800	favorite hosting providers as long as
+2270230	you ensure that your application or your
+2272660	hosting your server - ship the app
+2275060	through HTTP I will use firebase because
+2277970	it's super simple to setup and super
+2279650	simple to get started so I'll quickly
+2281840	head over to firebase and there I'll go
+2284600	to the console to create a new project
+2286790	for that and again you can use any other
+2288680	hosting provider as long as your app is
+2290480	served over HTTP so here I will name
+2294350	this basic PWA
+2297080	and region can be whichever region you
+2300920	want Germany and create this project now
+2303680	firebase also offers a lot of other
+2306320	features like database which
+2308000	she was at all here I'm just interested
+2309710	in their hosting so once it is finished
+2313460	I want you well host my app here so if I
+2317180	click on hosting and click on get
+2319220	started you get instructions on how to
+2321830	host your application and first of all
+2324740	you should install the firebase tools
+2326390	again of course only relevant if you are
+2328700	using firebase so I'll quit my local
+2331550	development server and I'll quickly
+2333080	install the firebase tools globally on
+2335720	my machine with sudo and people install
+2338240	- gee firebase tools does basically a
+2341210	seal i buy firebase which allows us to
+2343730	do some things like easily deploying it
+2346220	to our web server now once this is
+2348260	finished we can simply click continue
+2350600	here in this window to see the next
+2352480	tasks we should sign in and then initiai
+2356510	initiate our project now I already am
+2359240	signed in so I'll type firebase init
+2361460	here to put this project folder under
+2363950	control of firebase and I'll simply just
+2366380	check posting here by hitting the tab
+2368270	bar in this drop-down in this menu and
+2370910	then hit enter and this will now set us
+2373940	up to be a host of a project now I have
+2376250	to pick the project and its basic PWA
+2378890	for me the project just to create it
+2381080	I'll confirm that my route web directory
+2384890	should be the public directory which is
+2386360	the default
+2387020	I will check no here it's not a single
+2390050	page application though that
+2391370	theoretically would theoretically would
+2392870	be one and you could write Y for yes
+2395330	here but I'll write no and I don't want
+2398780	to override the public index.html file
+2400970	so I'll enter n here for no to with that
+2403790	it's initialized and the last step is Q
+2406190	enter firebase deploy so let's run this
+2409490	deployed to ship this project to a
+2413000	server and once this is done we'll also
+2416570	get the URL under which we can wizard
+2418610	this here Q so let's wait for this to
+2421250	finish real quick and now that it
+2423290	finished des is the URL where we can
+2425510	wizard our project let's quickly check
+2427400	it here on Mac so I'll quickly enter it
+2429980	here instead of localhost looks good
+2432230	looks very good let's reload this one
+2434930	more time let's now try offline mode
+2437180	here by going offline it's looking days
+2439550	decent now let's try it on the mobile
+2441500	the
+2442239	so there I'll visit the same URL of
+2444429	course you should enter your URL and I
+2446529	see my project here I'm also asked
+2448449	whether I want to add it to your home
+2449739	screen or not so I'll quickly do that
+2451089	and once it has the same icon it's a
+2453519	different app for my phone here because
+2456189	it's not running on localhost and now if
+2458589	I tap this icon now you see what I meant
+2461229	it's running standalone like a real app
+2463929	and if I open the task switcher here you
+2467139	actually see this here is the app with
+2469719	the theme color you can see the blue
+2471429	toolbar and here is Chrome so it's
+2474309	running as a separate process even
+2476319	though technically it still runs powered
+2478089	by Chrome it still uses Chrome it still
+2480579	is a web app but it looks like a native
+2482709	app it behaves like one so that's the
+2484449	cool thing here we got this application
+2486609	and finally if I check offline mode here
+2488679	- by simply going into airplane mode
+2491919	real quick if I now reload the app you
+2494559	see it's still working it's still
+2496629	working fine here and now if I reenable
+2499209	Internet we're back to the online
+2501489	experience so that's the cool thing this
+2504009	is how it looks like if we run it on a
+2506019	real server again any server you like as
+2508959	long as it's over HTTPS since that is a
+2511389	serviceworker requirement and i hope
+2513549	this video gave you some insights into
+2515379	how to create a basic progressive web
+2517719	app which is installable and which pre
+2520959	caches some files to give you a basic
+2523209	offline functionality if you want to
+2525789	dive much deeper check out my you deme
+2527619	course and of course i'd be more than
+2529119	happy to also welcome you in all the our
+2531189	future videos on this channel bye
