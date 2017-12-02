@@ -5,21 +5,18 @@ const actualCode = `
   s.src = '${resourceUrl}';
   document.body.appendChild(s);
 `;
-
-chrome.tabs.query({
-  active: true,
-  currentWindow: true
-}, function (tabs) {
-  var activeTab = tabs[0];
-  const tabId = activeTab.id;
+chrome.browserAction.onClicked.addListener(function (tab) {
+  console.log(tab);
+  const tabId = tab.id;
   chrome.tabs.executeScript(tabId, {
       code: actualCode,
       runAt: 'document_end'
-  },
-  () => {
+    },
+    () => {
       console.log('hi');
-  });
+    });
   chrome.tabs.sendMessage(tabId, {
     "message": "clicked_browser_action"
   });
+
 })

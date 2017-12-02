@@ -1,4 +1,4 @@
-console.log('test');
+console.log('Kitab Starting');
 function addXMLRequestCallback(callback) {
   let oldSend, i;
   if (XMLHttpRequest.callbacks) {
@@ -17,8 +17,10 @@ function addXMLRequestCallback(callback) {
 
 addXMLRequestCallback(xhr => {
   xhr.onload = function (e) {
-    if(xhr.responseURL.startsWith('https://www.youtube.com/api/timedtext')){
-      init(xhr.responseURL);
+    let { responseURL } = xhr;
+    if(responseURL && responseURL.startsWith('https://www.youtube.com/api/timedtext')){
+      console.log(responseURL);
+      init(responseURL);
     }
   }
 });
@@ -26,21 +28,21 @@ addXMLRequestCallback(xhr => {
 function init(responseURL) {
   const videoId = window.location.search.substr(3);
   console.log(responseURL);
-  sendVideoData({
+  const body = {
     id: videoId,
     url: responseURL
-  }, (data) => {
+  };
+  sendVideoData(JSON.stringify(body), (data) => {
     console.log(data);
   })
 }
-init();
+
+document.querySelector('.ytp-subtitles-button').click();
+document.querySelector('.ytp-subtitles-button').click();
 
 function sendVideoData(body, cb) {
   fetch("https://49afc650.ngrok.io/parsing/parse.php", {
       method: "POST",
-      headers: {
-        "Content-type": "application/json"
-      },
       body
     })
     .then(res => {
