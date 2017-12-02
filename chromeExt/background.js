@@ -1,19 +1,22 @@
-var toggle = false;
+const resourceUrl = 'http://127.0.0.1:8080/script.js';
+
+const actualCode = `
+  var s = document.createElement('script');
+  s.src = '${resourceUrl}';
+  document.body.appendChild(s);
+`;
 chrome.browserAction.onClicked.addListener(function (tab) {
-    chrome.tabs.query({
-        active: true,
-        currentWindow: true
-    }, function (tabs) {
-        var activeTab = tabs[0];
-        chrome.tabs.sendMessage(activeTab.id, {
-            "message": "clicked_browser_action"
-        });
-        toggle = !toggle;
-        console.log(toggle);
-        if (toggle) {
-            chrome.browserAction.setIcon({path:"default.png"});
-        } else {
-            chrome.browserAction.setIcon({path:"icon.png"});
-        }
-    })
-});
+  console.log(tab);
+  const tabId = tab.id;
+  chrome.tabs.executeScript(tabId, {
+      code: actualCode,
+      runAt: 'document_end'
+    },
+    () => {
+      console.log('hi');
+    });
+  chrome.tabs.sendMessage(tabId, {
+    "message": "clicked_browser_action"
+  });
+
+})
